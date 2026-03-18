@@ -43,6 +43,12 @@
             line-height: 1.2;
         }
 
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
         /* Header */
         header {
             background: var(--white);
@@ -102,7 +108,7 @@
         .hero {
             margin-top: 80px;
             background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal) 100%);
-            padding: 5rem 2rem;
+            padding: 4rem 2rem;
             position: relative;
             overflow: hidden;
         }
@@ -121,14 +127,20 @@
         .hero-container {
             max-width: 1000px;
             margin: 0 auto;
-            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
             position: relative;
             z-index: 2;
         }
 
-        .hero h1 {
+        .hero-content {
             color: white;
-            font-size: 3rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
             margin-bottom: 1.5rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }
@@ -137,12 +149,12 @@
             display: inline-block;
             background: var(--gold);
             color: var(--dark);
-            padding: 1rem 2.5rem;
+            padding: 1rem 2rem;
             border-radius: 50px;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 800;
             text-decoration: none;
-            margin: 1.5rem 0;
+            margin: 1rem 0;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             transition: all 0.3s;
         }
@@ -154,9 +166,25 @@
 
         .hero-subtitle {
             color: rgba(255,255,255,0.95);
-            font-size: 1.3rem;
-            margin-top: 1.5rem;
+            font-size: 1.2rem;
+            margin-top: 1rem;
             font-weight: 600;
+        }
+
+        .hero-image {
+            position: relative;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero-image img {
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            border: 5px solid rgba(255,255,255,0.2);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
         }
 
         /* Benefits Bar */
@@ -234,29 +262,61 @@
             align-items: center;
         }
 
-        .product-image {
-            background: linear-gradient(135deg, #E9F5F3, #CDE8E5);
-            border-radius: 20px;
-            padding: 3rem;
-            text-align: center;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        .product-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
         }
 
-        .product-image i {
-            font-size: 8rem;
-            color: var(--teal);
+        .main-product-img {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border: 2px solid #eee;
+        }
+
+        .main-product-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .product-thumbnails {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .thumb {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: 2px solid #eee;
+            transition: transform 0.3s;
+        }
+
+        .thumb:hover {
+            transform: translateY(-5px);
+            border-color: var(--teal);
+        }
+
+        .thumb img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
         }
 
         .product-content h3 {
             color: var(--teal);
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         .product-content h2 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: var(--dark);
             margin-bottom: 1.5rem;
             line-height: 1.3;
@@ -271,7 +331,7 @@
             padding: 0.75rem 0;
             padding-left: 2rem;
             position: relative;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: var(--dark);
             border-bottom: 1px solid #eee;
         }
@@ -296,7 +356,7 @@
         }
 
         .highlight-box h4 {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-bottom: 0.5rem;
         }
 
@@ -319,6 +379,21 @@
             margin-top: 1rem;
             font-size: 0.9rem;
             color: var(--gray);
+            border-left: 4px solid var(--gold);
+        }
+
+        /* Water Glass Section */
+        .water-showcase {
+            background: linear-gradient(135deg, #e0f2f1, #b2dfdb);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .water-showcase img {
+            max-width: 600px;
+            margin: 2rem auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
         }
 
         /* Testimonials */
@@ -370,10 +445,49 @@
             color: var(--teal-dark);
         }
 
+        /* Installation Section */
+        .installation {
+            background: var(--white);
+            padding: 4rem 2rem;
+        }
+
+        .install-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .install-img {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .install-img img {
+            width: 100%;
+            display: block;
+        }
+
+        .install-content h3 {
+            color: var(--teal);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .install-content p {
+            font-size: 1.1rem;
+            color: var(--gray);
+            line-height: 1.8;
+        }
+
         /* Info Section */
         .info-section {
             background: var(--white);
             text-align: center;
+            padding: 3rem 2rem;
         }
 
         .info-box {
@@ -381,7 +495,9 @@
             color: white;
             padding: 2rem;
             border-radius: 20px;
-            margin: 2rem 0;
+            margin: 2rem auto;
+            max-width: 800px;
+            box-shadow: 0 10px 30px rgba(42, 157, 143, 0.3);
         }
 
         .info-box h3 {
@@ -474,7 +590,14 @@
         }
 
         /* Responsive */
-        @media (max-width: 768px) {
+        @media (max-width: 968px) {
+            .hero-container,
+            .product-grid,
+            .install-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
             .hero h1 {
                 font-size: 2rem;
             }
@@ -482,11 +605,6 @@
             .hero-phone, .cta-phone {
                 font-size: 1.5rem;
                 padding: 0.8rem 1.5rem;
-            }
-            
-            .product-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
             }
             
             .section-title {
@@ -498,9 +616,22 @@
                 gap: 1rem;
             }
             
-            .phone-header {
-                font-size: 1rem;
-                padding: 0.5rem 1rem;
+            .product-thumbnails {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            
+            .product-thumbnails {
+                grid-template-columns: 1fr;
+            }
+            
+            .price-tag {
+                font-size: 2rem;
             }
         }
 
@@ -533,11 +664,16 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container">
-            <h1>Venta y Instalación de Purificadores de Agua en Puerto Rico</h1>
-            <a href="tel:7879729553" class="hero-phone">
-                <i class="fas fa-phone"></i> 787 972 9553
-            </a>
-            <p class="hero-subtitle">💧 Dile ADIÓS al agua embotellada: ¡9 Veces mas económica!</p>
+            <div class="hero-content">
+                <h1>Venta y Instalación de Purificadores de Agua en Puerto Rico</h1>
+                <a href="tel:7879729553" class="hero-phone">
+                    <i class="fas fa-phone"></i> 787 972 9553
+                </a>
+                <p class="hero-subtitle">💧 Dile ADIÓS al agua embotellada: ¡9 Veces mas económica!</p>
+            </div>
+            <div class="hero-image">
+                <img src="https://kimi-web-img.moonshot.cn/img/www.jrgasandwater.com.au/a459c93588abb4566200acdeed39df82b840ba65.webp" alt="Sistema de Ósmosis Inversa bajo fregadero">
+            </div>
         </div>
     </section>
 
@@ -573,9 +709,18 @@
             <h2 class="section-title">Purificador de Agua Osmosis Inversa</h2>
             
             <div class="product-grid">
-                <div class="product-image">
-                    <i class="fas fa-faucet"></i>
-                    <p style="margin-top: 1rem; color: var(--teal); font-weight: 600;">Filtro de 5 etapas para máxima calidad del agua</p>
+                <div class="product-gallery">
+                    <div class="main-product-img">
+                        <img src="https://kimi-web-img.moonshot.cn/img/i5.walmartimages.com/1c66f2f7095e39815c605293f886537738313f20.png" alt="Sistema de 5 etapas completo con tanque y filtros">
+                    </div>
+                    <div class="product-thumbnails">
+                        <div class="thumb">
+                            <img src="https://kimi-web-img.moonshot.cn/img/www.expresswater.com/2955b0662400ec78bc2a17b314d60cb777f9617f.jpg" alt="Grifo elegante cromado">
+                        </div>
+                        <div class="thumb">
+                            <img src="https://kimi-web-img.moonshot.cn/img/www.expresswater.com/6c7da2c01282655b617685e507e47db2d52f4e72.jpg" alt="Grifo moderno instalado">
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="product-content">
@@ -609,14 +754,42 @@
         </div>
     </section>
 
+    <!-- Water Glass Showcase -->
+    <section class="water-showcase">
+        <div class="container">
+            <h2 class="section-title">Agua 100% Pura y Cristalina</h2>
+            <img src="https://kimi-web-img.moonshot.cn/img/img.freepik.com/187b98e6dc0a2ba505c01c19bf1a8f901723624b.jpg" alt="Vaso de agua pura cristalina">
+            <p style="font-size: 1.2rem; color: var(--teal-dark); margin-top: 1rem;">
+                Disfruta de agua refrescante, limpia y saludable directamente de tu grifo
+            </p>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section class="installation">
+        <div class="install-grid">
+            <div class="install-img">
+                <img src="https://kimi-web-img.moonshot.cn/img/contentgrid.thdstatic.com/5952a8582f3394c9a6be74fd950abd57ef67359a.jpg" alt="Técnico instalando sistema de filtración">
+            </div>
+            <div class="install-content">
+                <h3>Instalación Profesional Incluida</h3>
+                <p>Nuestros técnicos certificados instalan tu sistema en menos de 2 horas. 
+                Trabajamos limpio, rápido y garantizamos que todo quede funcionando perfectamente. 
+                <strong>Instalamos en toda la isla de Puerto Rico.</strong></p>
+                <br>
+                <a href="tel:7879729553" class="phone-header" style="display: inline-flex;">
+                    <i class="fas fa-phone"></i> Agenda tu instalación
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ Section -->
     <section class="info-section">
-        <div class="container">
-            <div class="info-box">
-                <h3>ℹ️ ¿Dónde consigo los filtros para el mantenimiento? ℹ️</h3>
-                <p style="font-size: 1.1rem;">Te ofrecemos filtros de repuesto originales con entrega a domicilio en toda Puerto Rico. 
-                <br>El mantenimiento es sencillo y económico.</p>
-            </div>
+        <div class="info-box">
+            <h3>ℹ️ ¿Dónde consigo los filtros para el mantenimiento? ℹ️</h3>
+            <p style="font-size: 1.1rem;">Te ofrecemos filtros de repuesto originales con entrega a domicilio en toda Puerto Rico. 
+            <br>El mantenimiento es sencillo y económico.</p>
         </div>
     </section>
 
@@ -697,7 +870,7 @@
 
     <!-- Disclaimer -->
     <div class="disclaimer">
-        <strong>LOGOS DE WALMART, HOME DEPOT, HQJ Y EBAY</strong> le pertencen a sus dueños y no estan afiliadas de ninguna forma con waterguru.
+        <strong>LOGOS DE WALMART, HOME DEPOT, HQJ Y EBAY</strong> le pertencen a sus dueños y no están afiliadas de ninguna forma con waterguru.
     </div>
 
     <!-- Footer -->
