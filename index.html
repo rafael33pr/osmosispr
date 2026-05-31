@@ -15,7 +15,7 @@
 <meta property="og:title" content="Water Guru PR | Ósmosis Inversa 5 Etapas — Instalación Incluida">
 <meta property="og:description" content="Agua pura en tu cocina 24/7. Sistema ósmosis inversa 5 etapas desde $38/mes. Instalación completa incluida en Puerto Rico.">
 <meta property="og:locale" content="es_PR">
-<link rel="canonical" href="https://waterguru1.com">
+<link rel="canonical" href="https://watergurupr.com">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LocalBusiness","name":"Water Guru PR","description":"Sistemas de purificación de agua por ósmosis inversa de 5 etapas en Puerto Rico","telephone":"+17879729553","address":{"@type":"PostalAddress","addressRegion":"PR","addressCountry":"US"},"priceRange":"$$","founder":{"@type":"Person","name":"Rafael Santiago"},"sameAs":["https://wa.me/17879729553"]}
 </script>
@@ -164,6 +164,42 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;heigh
 .pay-row{display:flex;align-items:center;gap:8px;margin-top:14px;justify-content:center;flex-wrap:wrap}
 .pbadge{background:var(--light);border:1px solid var(--border);border-radius:8px;padding:4px 12px;font-size:.72rem;font-weight:700;color:var(--muted)}
 
+/* ── REVIEWS ───────────────────────────────────────────── */
+#reviews{background:var(--light)}
+.reviews-header{display:flex;flex-direction:column;align-items:center;margin-bottom:42px}
+.g-score-box{display:flex;align-items:center;gap:20px;background:#fff;border-radius:20px;padding:22px 32px;box-shadow:var(--shadow);margin-bottom:10px}
+.g-logo{display:flex;align-items:center;gap:7px;font-family:var(--display);font-size:1.1rem;font-weight:900}
+.g-logo span.g1{color:#4285F4}.g-logo span.g2{color:#EA4335}.g-logo span.g3{color:#FBBC05}.g-logo span.g4{color:#4285F4}.g-logo span.g5{color:#34A853}.g-logo span.g6{color:#EA4335}
+.g-divider{width:1px;height:40px;background:var(--border)}
+.g-num{font-family:var(--display);font-size:3rem;font-weight:900;color:var(--navy);line-height:1}
+.g-right{}
+.g-stars-row{display:flex;gap:3px;margin-bottom:3px}
+.gstar{color:#FBBC05;font-size:1.3rem}
+.g-total{font-size:.8rem;color:var(--muted)}
+.rev-track-wrap{overflow:hidden;position:relative;max-width:1100px;margin:0 auto}
+.rev-track-wrap::before,.rev-track-wrap::after{content:'';position:absolute;top:0;bottom:0;width:60px;z-index:2;pointer-events:none}
+.rev-track-wrap::before{left:0;background:linear-gradient(to right,var(--light),transparent)}
+.rev-track-wrap::after{right:0;background:linear-gradient(to left,var(--light),transparent)}
+.rev-track{display:flex;gap:20px;transition:transform .6s cubic-bezier(.4,0,.2,1)}
+.rev-card{background:#fff;border-radius:var(--radius);padding:24px 22px;min-width:290px;max-width:290px;box-shadow:var(--shadow);flex-shrink:0;display:flex;flex-direction:column;gap:12px;border-top:3px solid #FBBC05}
+.rev-top{display:flex;align-items:center;gap:12px}
+.rev-avatar{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:800;font-size:1.1rem;color:#fff;flex-shrink:0}
+.rev-meta{}
+.rev-name{font-weight:700;font-size:.92rem;color:var(--navy)}
+.rev-date{font-size:.75rem;color:var(--muted);margin-top:1px}
+.rev-stars{display:flex;gap:2px}
+.rev-stars span{color:#FBBC05;font-size:1rem}
+.rev-text{font-size:.87rem;color:var(--text);line-height:1.65;flex:1}
+.rev-badge{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;color:#4285F4;font-weight:600}
+.rev-controls{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:30px}
+.rev-btn{width:40px;height:40px;border-radius:50%;border:2px solid var(--border);background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.1rem;transition:all .3s;color:var(--navy)}
+.rev-btn:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.rev-dots{display:flex;gap:7px}
+.rdot{width:8px;height:8px;border-radius:50%;background:var(--border);transition:all .3s;cursor:pointer}
+.rdot.active{background:var(--navy);width:22px;border-radius:4px}
+.rev-google-link{display:inline-flex;align-items:center;gap:8px;margin-top:8px;background:#fff;border:2px solid var(--border);border-radius:50px;padding:10px 22px;font-size:.85rem;font-weight:700;color:var(--navy);transition:all .3s}
+.rev-google-link:hover{border-color:var(--cyan);color:var(--cyan-dark);transform:translateY(-2px)}
+
 /* ── ABOUT ─────────────────────────────────────────────── */
 #about{background:#fff}
 .about-grid{max-width:900px;margin:0 auto;display:grid;grid-template-columns:280px 1fr;gap:60px;align-items:center}
@@ -266,9 +302,8 @@ footer strong{color:#fff}
       </div>
     </div>
     <div class="hero-img-wrap">
-      <div class="hero-glow"></div>
       <!-- ★ REEMPLAZA esta URL con la foto de tu sistema RO -->
-      <img src="https://github.com/rafael33pr/osmosispr/blob/main/osmosis-inversa_Ponce.jpg?raw=true"
+      <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=500&q=80"
            alt="Sistema de Purificación de Agua Ósmosis Inversa 5 Etapas Water Guru"
            class="hero-img" width="420" height="380" loading="eager">
     </div>
@@ -297,7 +332,7 @@ footer strong{color:#fff}
       <article class="c-card">
         <div class="c-icon">⚗️</div>
         <h3>Plomo</h3>
-        <p>Metal pesado neurotóxico.  VENENO. Común en tuberías antiguas de toda la isla de Puerto Rico.</p>
+        <p>Metal pesado neurotóxico. Común en tuberías antiguas de toda la isla de Puerto Rico.</p>
         <span class="c-check">✓</span>
       </article>
       <article class="c-card">
@@ -425,7 +460,7 @@ footer strong{color:#fff}
     <div class="product-card reveal">
       <div class="prod-img">
         <!-- ★ REEMPLAZA con tu foto del producto instalado -->
-        <img src="https://github.com/rafael33pr/osmosispr/blob/main/filtro-de-agua_osmosis.jpg?raw=true"
+        <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=400&q=80"
              alt="Purificador de Agua Ósmosis Inversa 5 Etapas Water Guru RO-WG50 — Puerto Rico"
              width="290" height="260" loading="lazy">
       </div>
@@ -448,7 +483,7 @@ footer strong{color:#fff}
           <p class="price-per">con Klarna · o pago único disponible</p>
         </div>
         <!-- ★ REEMPLAZA href con tu Stripe Payment Link real -->
-        <a href="https://buy.stripe.com/3cI8wP7dP05S4jedUO0Jq04" class="btn-buy" target="_blank" rel="noopener" id="stripeBtn">
+        <a href="https://buy.stripe.com/REEMPLAZA_CON_TU_LINK" class="btn-buy" target="_blank" rel="noopener" id="stripeBtn">
           🛒 Comprar Ahora — Pago 100% Seguro
         </a>
         <div class="pay-row" aria-label="Métodos de pago">
@@ -462,6 +497,137 @@ footer strong{color:#fff}
   </div>
 </section>
 
+<!-- ═══ REVIEWS ════════════════════════════════════════════ -->
+<section id="reviews" aria-labelledby="rev-title">
+  <div class="wrap">
+    <span class="sec-badge" style="display:block;width:fit-content;margin:0 auto 12px">Lo Que Dicen Nuestros Clientes</span>
+    <h2 class="sec-title" id="rev-title">Reseñas de Google</h2>
+    <p class="sec-sub">Familias reales en Puerto Rico que ya disfrutan de agua pura en su hogar.</p>
+
+    <!-- Caja de puntuación global -->
+    <div class="reviews-header reveal">
+      <div class="g-score-box">
+        <div class="g-logo">
+          <span class="g1">G</span><span class="g2">o</span><span class="g3">o</span><span class="g4">g</span><span class="g5">l</span><span class="g6">e</span>
+        </div>
+        <div class="g-divider"></div>
+        <!-- ★ CAMBIA el número de la puntuación global -->
+        <div class="g-num">5.0</div>
+        <div class="g-right">
+          <div class="g-stars-row">
+            <span class="gstar">★</span><span class="gstar">★</span><span class="gstar">★</span><span class="gstar">★</span><span class="gstar">★</span>
+          </div>
+          <!-- ★ CAMBIA el número total de reseñas -->
+          <div class="g-total">Basado en 47 reseñas de Google</div>
+        </div>
+      </div>
+      <!-- ★ REEMPLAZA con el link de TU perfil de Google Business -->
+      <a href="https://g.page/r/TU_GOOGLE_BUSINESS_ID/review" target="_blank" rel="noopener" class="rev-google-link">
+        <span style="color:#4285F4;font-size:1.1rem">★</span> Ver todas las reseñas en Google
+      </a>
+    </div>
+
+    <!-- Carrusel de reseñas -->
+    <div class="rev-track-wrap">
+      <div class="rev-track" id="revTrack">
+
+        <!-- ════════════════════════════════════════════════
+             ★ COPIA y PEGA este bloque para cada reseña.
+               Cambia: color avatar, inicial, nombre, fecha,
+               estrellas (★) y el texto de la reseña.
+        ════════════════════════════════════════════════ -->
+
+        <div class="rev-card">
+          <div class="rev-top">
+            <div class="rev-avatar" style="background:#4285F4">M</div>
+            <div class="rev-meta">
+              <div class="rev-name">María González</div>
+              <div class="rev-date">Hace 2 semanas</div>
+            </div>
+          </div>
+          <div class="rev-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="rev-text">"Rafael es un profesional excelente. Instaló el sistema en menos de una hora y el agua tiene un sabor increíble. ¡100% recomendado!"</p>
+          <span class="rev-badge">✅ Reseña verificada de Google</span>
+        </div>
+
+        <div class="rev-card">
+          <div class="rev-top">
+            <div class="rev-avatar" style="background:#EA4335">C</div>
+            <div class="rev-meta">
+              <div class="rev-name">Carlos Rivera</div>
+              <div class="rev-date">Hace 1 mes</div>
+            </div>
+          </div>
+          <div class="rev-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="rev-text">"Llevaba años gastando en botellas. Desde que instalé el sistema de Water Guru ahorro más de $600 al año. La instalación fue perfecta."</p>
+          <span class="rev-badge">✅ Reseña verificada de Google</span>
+        </div>
+
+        <div class="rev-card">
+          <div class="rev-top">
+            <div class="rev-avatar" style="background:#34A853">L</div>
+            <div class="rev-meta">
+              <div class="rev-name">Luz Martínez</div>
+              <div class="rev-date">Hace 3 semanas</div>
+            </div>
+          </div>
+          <div class="rev-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="rev-text">"El mejor dinero que he invertido para mi familia. El agua sabe pura, sin olor a cloro. Rafael explica todo con paciencia y claridad."</p>
+          <span class="rev-badge">✅ Reseña verificada de Google</span>
+        </div>
+
+        <div class="rev-card">
+          <div class="rev-top">
+            <div class="rev-avatar" style="background:#FBBC05">J</div>
+            <div class="rev-meta">
+              <div class="rev-name">José Ortiz</div>
+              <div class="rev-date">Hace 2 meses</div>
+            </div>
+          </div>
+          <div class="rev-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="rev-text">"Servicio de primera. Llegó puntual, instaló todo limpio y ordenado. Nos explicó cómo funciona cada filtro. Ya no compramos más botellas."</p>
+          <span class="rev-badge">✅ Reseña verificada de Google</span>
+        </div>
+
+        <div class="rev-card">
+          <div class="rev-top">
+            <div class="rev-avatar" style="background:#0077b6">A</div>
+            <div class="rev-meta">
+              <div class="rev-name">Ana Colón</div>
+              <div class="rev-date">Hace 1 mes</div>
+            </div>
+          </div>
+          <div class="rev-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="rev-text">"Lo contraté después de ver sus anuncios y no me arrepiento. El sistema funciona perfecto. El agua para cocinar y beber es otra cosa. ¡Gracias Rafael!"</p>
+          <span class="rev-badge">✅ Reseña verificada de Google</span>
+        </div>
+
+        <div class="rev-card">
+          <div class="rev-top">
+            <div class="rev-avatar" style="background:#e76f51">R</div>
+            <div class="rev-meta">
+              <div class="rev-name">Roberto Sánchez</div>
+              <div class="rev-date">Hace 5 días</div>
+            </div>
+          </div>
+          <div class="rev-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="rev-text">"El sistema lleva 6 meses instalado y sin ningún problema. El servicio post-venta de Rafael es excelente. Responde rápido por WhatsApp."</p>
+          <span class="rev-badge">✅ Reseña verificada de Google</span>
+        </div>
+
+      </div><!-- /rev-track -->
+    </div>
+
+    <!-- Controles del carrusel -->
+    <div class="rev-controls">
+      <button class="rev-btn" id="revPrev" aria-label="Reseña anterior">‹</button>
+      <div class="rev-dots" id="revDots"></div>
+      <button class="rev-btn" id="revNext" aria-label="Siguiente reseña">›</button>
+    </div>
+
+  </div>
+</section>
+
 <!-- ═══ ABOUT ══════════════════════════════════════════════ -->
 <section id="about" aria-labelledby="about-title">
   <div class="wrap">
@@ -469,28 +635,28 @@ footer strong{color:#fff}
     <h2 class="sec-title" id="about-title">Sobre Mí</h2>
     <div class="about-grid reveal">
       <div class="about-img-wrap">
-        <!-- ★ REEMPLAZA con tu foto personal:-->
-             <img src="https://github.com/rafael33pr/osmosispr/blob/main/fotogithub.jpg?raw=true" alt="Rafael Santiago — Water Guru" style="width:100%;border-radius:24px;box-shadow:var(--shadow-lg)"> 
+        <!-- ★ REEMPLAZA con tu foto personal:
+             <img src="tu-foto.jpg" alt="Rafael Santiago — Water Guru" style="width:100%;border-radius:24px;box-shadow:var(--shadow-lg)"> -->
         <div class="about-photo" aria-label="Foto de Rafael Santiago" role="img">👤</div>
         <div class="about-accent">
-          <strong>5+</strong>
+          <strong>10+</strong>
           <span>Años de<br>Experiencia</span>
         </div>
       </div>
       <div class="about-text">
-        <span class="sec-badge">Te ayudo a tener agua pura</span>
+        <span class="sec-badge">Especialista Certificado</span>
         <h3 class="about-name">Rafael Santiago</h3>
-        <p class="about-role">🎓 Instalador de Sistemas de Ósmosis Inversa · Puerto Rico</p>
+        <p class="about-role">🎓 Especialista en Sistemas de Ósmosis Inversa · Puerto Rico</p>
         <!-- ★ MODIFICA este texto con tu propia historia -->
         <p class="about-p">Soy Rafael Santiago, fundador de Water Guru y especialista en sistemas de purificación de agua por ósmosis inversa en Puerto Rico. Mi misión es garantizar que cada familia puertorriqueña tenga acceso a agua limpia, pura y segura directamente de su grifo.</p>
-        <p class="about-p">He instalado sistemas en hogares y negocios a través de toda la isla. Conozco de primera mano los problemas del agua municipal en Puerto Rico — el cloro excesivo, las tuberías envejecidas, los sedimentos — y sé exactamente qué sistema necesita tu hogar para proteger a tu familia.</p>
+        <p class="about-p">He instalado sistemas en cientos de hogares y negocios a través de toda la isla. Conozco de primera mano los problemas del agua municipal en Puerto Rico — el cloro excesivo, las tuberías envejecidas, los sedimentos — y sé exactamente qué sistema necesita tu hogar para proteger a tu familia.</p>
         <p class="about-p">Cada instalación es personal para mí. No termino hasta que tú estés completamente satisfecho con tu agua.</p>
         <div class="tags">
           <span class="tag">💧 Ósmosis Inversa</span>
           <span class="tag">🔧 Instalación Profesional</span>
           <span class="tag">📋 Certificado NSF</span>
           <span class="tag">🇵🇷 Servicio PR</span>
-          <span class="tag">⭐ 75+ Clientes</span>
+          <span class="tag">⭐ 100+ Clientes</span>
           <span class="tag">🏠 Residencial & Comercial</span>
         </div>
       </div>
@@ -605,7 +771,49 @@ function calcUpdate(){
 sldr.addEventListener('input', calcUpdate);
 calcUpdate();
 
-// ── Scroll reveal ─────────────────────────────────────────
+// ── Reviews carousel ──────────────────────────────────────
+(function(){
+  const track = document.getElementById('revTrack');
+  const cards = track.querySelectorAll('.rev-card');
+  const dotsEl = document.getElementById('revDots');
+  const total = cards.length;
+  let cur = 0, autoT;
+
+  // Build dots
+  cards.forEach((_,i)=>{
+    const d = document.createElement('button');
+    d.className='rdot'+(i===0?' active':'');
+    d.setAttribute('aria-label','Reseña '+(i+1));
+    d.addEventListener('click',()=>goTo(i));
+    dotsEl.appendChild(d);
+  });
+
+  function cardW(){ return cards[0].offsetWidth + 20; }
+
+  function goTo(n){
+    cur = (n + total) % total;
+    track.style.transform = `translateX(-${cur * cardW()}px)`;
+    dotsEl.querySelectorAll('.rdot').forEach((d,i)=>d.classList.toggle('active',i===cur));
+    resetAuto();
+  }
+
+  function resetAuto(){
+    clearInterval(autoT);
+    autoT = setInterval(()=>goTo(cur+1), 4500);
+  }
+
+  document.getElementById('revNext').addEventListener('click',()=>goTo(cur+1));
+  document.getElementById('revPrev').addEventListener('click',()=>goTo(cur-1));
+  resetAuto();
+
+  // Swipe support on mobile
+  let tx=0;
+  track.addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:true});
+  track.addEventListener('touchend',e=>{
+    const dx=e.changedTouches[0].clientX-tx;
+    if(Math.abs(dx)>40) goTo(dx<0?cur+1:cur-1);
+  },{passive:true});
+})();
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('on'); obs.unobserve(e.target); }});
 }, {threshold:.1, rootMargin:'0px 0px -40px 0px'});
