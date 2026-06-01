@@ -229,6 +229,9 @@ document.getElementById("pronto");
 const meses =
 document.getElementById("meses");
 
+const aprSelect =
+document.getElementById("apr");
+
 function actualizar(){
 
     let precio =
@@ -248,27 +251,23 @@ function actualizar(){
     precio - prontoPago;
 
     let apr =
-parseFloat(document.getElementById("apr").value) / 100;
+    parseFloat(aprSelect.value) / 100;
 
-let mensual;
+    let mensual;
 
-if(apr === 0){
+    if(apr === 0){
 
-    mensual = financiado / plazo;
+        mensual = financiado / plazo;
 
-}else{
+    }else{
 
-    let r = apr / 12;
+        let r = apr / 12;
 
-    mensual =
-    (financiado * r) /
-    (1 - Math.pow(1 + r, -plazo));
+        mensual =
+        (financiado * r) /
+        (1 - Math.pow(1 + r, -plazo));
 
-}
-    const apr =
-document.getElementById("apr");
-
-apr.addEventListener("change",actualizar);
+    }
 
     let diario =
     mensual / 30;
@@ -305,6 +304,7 @@ apr.addEventListener("change",actualizar);
 producto.addEventListener("change",actualizar);
 pronto.addEventListener("input",actualizar);
 meses.addEventListener("input",actualizar);
+aprSelect.addEventListener("change",actualizar);
 
 actualizar();
 
