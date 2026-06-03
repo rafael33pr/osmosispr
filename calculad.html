@@ -6,11 +6,13 @@
 
 <title>Calculadora de Pago Water Guru</title>
 
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
 <style>
 
 *{
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'DM Sans', Arial, sans-serif;
 }
 
 body{
@@ -32,6 +34,9 @@ h1{
     text-align:center;
     color:#0099cc;
     margin-bottom:10px;
+    font-family:'DM Serif Display', serif;
+    font-weight:400;
+    letter-spacing:-.5px;
 }
 
 .sub{
@@ -44,7 +49,9 @@ label{
     display:block;
     margin-top:20px;
     margin-bottom:8px;
-    font-weight:bold;
+    font-weight:700;
+    font-size:14px;
+    letter-spacing:.3px;
 }
 
 select,
@@ -54,6 +61,7 @@ input[type=number]{
     border:1px solid #ddd;
     border-radius:10px;
     font-size:16px;
+    font-family:'DM Sans', Arial, sans-serif;
 }
 
 input[type=range]{
@@ -82,6 +90,8 @@ input[type=range]{
     font-size:42px;
     color:#0099cc;
     margin:0;
+    font-family:'DM Serif Display', serif;
+    font-weight:400;
 }
 
 .pago p{
@@ -98,7 +108,10 @@ input[type=range]{
     background:#0099cc;
     color:white;
     font-size:18px;
+    font-family:'DM Sans', Arial, sans-serif;
+    font-weight:700;
     cursor:pointer;
+    letter-spacing:.5px;
 }
 
 .btn:hover{
@@ -107,8 +120,85 @@ input[type=range]{
 
 .valor-slider{
     text-align:right;
-    font-weight:bold;
+    font-weight:700;
     color:#0099cc;
+}
+
+/* Editar precios */
+.editar-precios-toggle{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:6px;
+    margin-top:8px;
+    cursor:pointer;
+    color:#0099cc;
+    font-size:13px;
+    font-weight:500;
+    user-select:none;
+}
+
+.editar-precios-toggle:hover{
+    opacity:.8;
+}
+
+.panel-precios{
+    display:none;
+    margin-top:12px;
+    background:#f0faff;
+    border:1px solid #cceeff;
+    border-radius:12px;
+    padding:15px;
+}
+
+.panel-precios.visible{
+    display:block;
+}
+
+.panel-precios .titulo-panel{
+    font-size:13px;
+    font-weight:700;
+    color:#0099cc;
+    margin-bottom:12px;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+}
+
+.precio-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:10px;
+}
+
+.precio-item:last-child{
+    margin-bottom:0;
+}
+
+.precio-item label{
+    margin:0;
+    font-size:13px;
+    font-weight:500;
+    color:#444;
+    flex:1;
+    line-height:1.3;
+}
+
+.precio-item input[type=number]{
+    width:110px;
+    flex-shrink:0;
+    padding:8px 10px;
+    font-size:14px;
+    font-weight:700;
+    color:#0099cc;
+    border:1px solid #99ddee;
+    border-radius:8px;
+    text-align:right;
+}
+
+.precio-item input[type=number]:focus{
+    outline:none;
+    border-color:#0099cc;
 }
 
 @media(max-width:600px){
@@ -139,11 +229,40 @@ Descubre cuánto podrías pagar al mes
 <label>Producto</label>
 
 <select id="producto">
-    <option value="1395">Purificador RO Xpert Water - $1395</option>
-    <option value="1795">Purificador RO Alkalino - $1795.00</option>
-    <option value="2400">Filtro Casa Completa( PUNTO DE USO) - $2,400</option>
-    <option value="3937">Filtro Casa Completa Premium  - $3937</option>
+    <option value="0">Purificador RO Xpert Water</option>
+    <option value="1">Purificador RO Alkalino</option>
+    <option value="2">Filtro Casa Completa (Punto de Uso)</option>
+    <option value="3">Filtro Casa Completa Premium</option>
 </select>
+
+<!-- Toggle editar precios -->
+<div class="editar-precios-toggle" onclick="togglePrecios()">
+    ✏️ Editar precios
+</div>
+
+<div class="panel-precios" id="panelPrecios">
+    <div class="titulo-panel">Precios de productos</div>
+
+    <div class="precio-item">
+        <label>Purificador RO Xpert Water</label>
+        <input type="number" id="p0" value="1395" min="0" step="1" oninput="actualizar()">
+    </div>
+
+    <div class="precio-item">
+        <label>Purificador RO Alkalino</label>
+        <input type="number" id="p1" value="1795" min="0" step="1" oninput="actualizar()">
+    </div>
+
+    <div class="precio-item">
+        <label>Filtro Casa Completa (Punto de Uso)</label>
+        <input type="number" id="p2" value="2400" min="0" step="1" oninput="actualizar()">
+    </div>
+
+    <div class="precio-item">
+        <label>Filtro Casa Completa Premium</label>
+        <input type="number" id="p3" value="3937" min="0" step="1" oninput="actualizar()">
+    </div>
+</div>
 
 <label>Pronto Pago</label>
 
@@ -169,7 +288,8 @@ $0
 <div class="valor-slider" id="mesesValor">
 24 meses
 </div>
-    <label>APR Estimado</label>
+
+<label>APR Estimado</label>
 
 <select id="apr">
     <option value="0">0%</option>
@@ -185,7 +305,7 @@ $0
 
 <div class="linea">
 <span>Precio:</span>
-<span id="precio">$1495</span>
+<span id="precio">$1,395</span>
 </div>
 
 <div class="linea">
@@ -195,7 +315,7 @@ $0
 
 <div class="linea">
 <span>Monto financiado:</span>
-<span id="financiado">$1495</span>
+<span id="financiado">$1,395</span>
 </div>
 
 <div class="pago">
@@ -220,90 +340,66 @@ SOLICITAR INFORMACIÓN
 
 <script>
 
-const producto =
-document.getElementById("producto");
+const producto   = document.getElementById("producto");
+const pronto     = document.getElementById("pronto");
+const meses      = document.getElementById("meses");
+const aprSelect  = document.getElementById("apr");
 
-const pronto =
-document.getElementById("pronto");
+function getPrecios(){
+    return [
+        parseFloat(document.getElementById("p0").value) || 0,
+        parseFloat(document.getElementById("p1").value) || 0,
+        parseFloat(document.getElementById("p2").value) || 0,
+        parseFloat(document.getElementById("p3").value) || 0,
+    ];
+}
 
-const meses =
-document.getElementById("meses");
-
-const aprSelect =
-document.getElementById("apr");
+function togglePrecios(){
+    const panel = document.getElementById("panelPrecios");
+    panel.classList.toggle("visible");
+}
 
 function actualizar(){
 
-    let precio =
-    parseFloat(producto.value);
+    const precios = getPrecios();
+    const idx     = parseInt(producto.value);
+    let precio    = precios[idx];
 
-    let prontoPago =
-    parseFloat(pronto.value);
-
-    let plazo =
-    parseFloat(meses.value);
+    let prontoPago = parseFloat(pronto.value);
+    let plazo      = parseFloat(meses.value);
 
     if(prontoPago > precio){
         prontoPago = precio;
+        pronto.value = precio;
     }
 
-    let financiado =
-    precio - prontoPago;
+    let financiado = precio - prontoPago;
 
-    let apr =
-    parseFloat(aprSelect.value) / 100;
+    let apr = parseFloat(aprSelect.value) / 100;
 
     let mensual;
 
     if(apr === 0){
-
         mensual = financiado / plazo;
-
-    }else{
-
+    } else {
         let r = apr / 12;
-
-        mensual =
-        (financiado * r) /
-        (1 - Math.pow(1 + r, -plazo));
-
+        mensual = (financiado * r) / (1 - Math.pow(1 + r, -plazo));
     }
 
-    let diario =
-    mensual / 30;
+    let diario = mensual / 30;
 
-    document.getElementById("precio")
-    .innerHTML =
-    "$" + precio.toLocaleString();
-
-    document.getElementById("prontoDisplay")
-    .innerHTML =
-    "-$" + prontoPago.toLocaleString();
-
-    document.getElementById("financiado")
-    .innerHTML =
-    "$" + financiado.toLocaleString();
-
-    document.getElementById("mensual")
-    .innerHTML =
-    "$" + mensual.toFixed(2);
-
-    document.getElementById("diario")
-    .innerHTML =
-    "≈ $" + diario.toFixed(2) + " por día";
-
-    document.getElementById("prontoValor")
-    .innerHTML =
-    "$" + prontoPago.toLocaleString();
-
-    document.getElementById("mesesValor")
-    .innerHTML =
-    plazo + " meses";
+    document.getElementById("precio").innerHTML        = "$" + precio.toLocaleString();
+    document.getElementById("prontoDisplay").innerHTML = "-$" + prontoPago.toLocaleString();
+    document.getElementById("financiado").innerHTML    = "$" + financiado.toLocaleString();
+    document.getElementById("mensual").innerHTML       = "$" + mensual.toFixed(2);
+    document.getElementById("diario").innerHTML        = "≈ $" + diario.toFixed(2) + " por día";
+    document.getElementById("prontoValor").innerHTML   = "$" + prontoPago.toLocaleString();
+    document.getElementById("mesesValor").innerHTML    = plazo + " meses";
 }
 
-producto.addEventListener("change",actualizar);
-pronto.addEventListener("input",actualizar);
-meses.addEventListener("input",actualizar);
+producto.addEventListener("change", actualizar);
+pronto.addEventListener("input",    actualizar);
+meses.addEventListener("input",     actualizar);
 aprSelect.addEventListener("change",actualizar);
 
 actualizar();
