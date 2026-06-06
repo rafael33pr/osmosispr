@@ -51,7 +51,6 @@ section{padding:80px 20px}
 .sec-sub{text-align:center;color:var(--muted);font-size:1rem;max-width:580px;margin:0 auto 48px}
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
 .reveal.on{opacity:1;transform:none}
-
 /* ── NAV ───────────────────────────────────────────────── */
 #nav{position:fixed;top:0;width:100%;z-index:1000;padding:18px 0;transition:all .3s}
 #nav.scrolled{background:rgba(10,35,66,.97);backdrop-filter:blur(12px);padding:10px 0;box-shadow:0 4px 24px rgba(0,0,0,.3)}
@@ -65,7 +64,6 @@ section{padding:80px 20px}
 .nav-btn:hover{background:var(--orange-dk)!important;transform:translateY(-2px)}
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
 .hamburger span{width:24px;height:3px;background:#fff;border-radius:3px;transition:all .3s}
-
 /* ── HERO ──────────────────────────────────────────────── */
 #hero{min-height:100vh;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 55%,var(--cyan-dark) 100%);display:flex;align-items:center;padding:110px 20px 70px;position:relative;overflow:hidden}
 #hero::before{content:'';position:absolute;width:560px;height:560px;border-radius:50%;background:rgba(0,180,216,.14);top:-120px;right:-140px;pointer-events:none}
@@ -86,7 +84,6 @@ section{padding:80px 20px}
 .hero-img-wrap{display:flex;justify-content:center;align-items:center;position:relative}
 .hero-img{max-width:420px;width:100%;filter:drop-shadow(0 20px 40px rgba(0,0,0,.4));animation:float 4s ease-in-out infinite;position:relative;z-index:1;border-radius:16px}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
-
 /* ── CONTAMINANTS ──────────────────────────────────────── */
 #contaminants{background:var(--light)}
 .c-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:920px;margin:0 auto}
@@ -96,7 +93,6 @@ section{padding:80px 20px}
 .c-card h3{font-family:var(--display);font-weight:800;font-size:1.15rem;color:var(--navy);margin-bottom:6px}
 .c-card p{font-size:.83rem;color:var(--muted);line-height:1.55}
 .c-check{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;background:#e6f9f0;border-radius:50%;color:var(--green);font-size:.85rem;margin-top:10px;font-weight:700}
-
 /* ── STAGES ────────────────────────────────────────────── */
 #stages{background:#fff}
 .stages{display:flex;flex-direction:column;gap:20px;max-width:780px;margin:0 auto;position:relative}
@@ -106,7 +102,6 @@ section{padding:80px 20px}
 .snum{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--cyan-dark));color:#fff;font-family:var(--display);font-weight:900;font-size:1.15rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 14px rgba(0,180,216,.4);position:relative;z-index:1}
 .sinfo h3{font-family:var(--display);font-weight:700;font-size:1rem;color:var(--navy);margin-bottom:5px}
 .sinfo p{color:var(--muted);font-size:.87rem;line-height:1.6}
-
 /* ── CALCULATOR ────────────────────────────────────────── */
 #calculator{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);color:#fff}
 #calculator .sec-title{color:#fff}
@@ -127,13 +122,11 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;heigh
 .cc .unit{font-size:.78rem;opacity:.75;margin-top:4px}
 .calc-note{text-align:center;margin-top:22px;padding:16px;background:rgba(46,204,113,.14);border:1px solid rgba(46,204,113,.3);border-radius:10px;font-size:.92rem}
 .calc-note strong{color:#2ecc71}
-
 /* ── MICROPLASTICS BANNER ──────────────────────────────── */
 #micro{background:linear-gradient(90deg,var(--orange) 0%,var(--orange-dk) 100%);padding:40px 20px;text-align:center;color:#fff}
 .micro-in{max-width:800px;margin:0 auto}
 .micro-in h2{font-family:var(--display);font-size:clamp(1.4rem,3vw,2rem);font-weight:900;margin-bottom:10px}
 .micro-in p{opacity:.9;font-size:.97rem;max-width:620px;margin:0 auto}
-
 /* ── BUY ───────────────────────────────────────────────── */
 #buy{background:var(--light)}
 .product-card{max-width:900px;margin:0 auto;background:#fff;border-radius:24px;box-shadow:var(--shadow-lg);display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
@@ -158,6 +151,62 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;heigh
 .pbadge{background:var(--light);border:1px solid var(--border);border-radius:8px;padding:4px 12px;font-size:.72rem;font-weight:700;color:var(--muted)}
 
 /* ══════════════════════════════════════════════════════════
+   ── WHOLE HOUSE (BODYGUARD) — NUEVA SECCIÓN ─────────────
+══════════════════════════════════════════════════════════ */
+#wholehouse{background:linear-gradient(160deg,#0d1b2a 0%,#1b2838 60%,#0a2342 100%);color:#fff;padding:80px 20px}
+#wholehouse .sec-title{color:#fff}
+#wholehouse .sec-sub{color:rgba(255,255,255,.65)}
+.wh-badge{background:linear-gradient(135deg,var(--orange),var(--orange-dk));color:#fff;font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 16px;border-radius:50px;display:inline-block;margin-bottom:12px}
+.wh-grid{max-width:1050px;margin:0 auto 60px;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.wh-img-side{display:flex;justify-content:center;align-items:center;position:relative}
+.wh-img-bg{position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(0,180,216,.18),transparent 70%)}
+.wh-product-img{max-width:320px;width:100%;filter:drop-shadow(0 20px 50px rgba(0,0,0,.6));position:relative;z-index:1;border-radius:12px}
+.wh-tag-pill{display:inline-flex;align-items:center;gap:7px;background:rgba(0,180,216,.15);border:1px solid rgba(0,180,216,.35);border-radius:50px;padding:6px 16px;font-size:.78rem;font-weight:600;color:var(--cyan);margin-bottom:18px}
+.wh-title{font-family:var(--display);font-size:clamp(1.7rem,4vw,2.6rem);font-weight:900;color:#fff;line-height:1.15;margin-bottom:14px}
+.wh-title em{color:var(--cyan);font-style:normal}
+.wh-sub{color:rgba(255,255,255,.75);font-size:.95rem;line-height:1.75;margin-bottom:24px}
+.wh-specs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
+.wh-spec{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:10px 16px;font-size:.82rem;text-align:center}
+.wh-spec strong{display:block;font-family:var(--display);font-weight:800;font-size:1.05rem;color:var(--cyan)}
+.wh-spec span{opacity:.7;font-size:.72rem}
+.wh-price-box{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:22px 24px;margin-bottom:22px}
+.wh-price-from{font-size:.8rem;opacity:.6;margin-bottom:4px}
+.wh-price{font-family:var(--display);font-size:2.4rem;font-weight:900;color:#fff;line-height:1}
+.wh-price sup{font-size:1.1rem}
+.wh-price sub{font-size:1rem;opacity:.7}
+.wh-price-note{font-size:.8rem;opacity:.6;margin-top:4px}
+.wh-guarantees{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+.wh-guar{background:rgba(46,204,113,.15);border:1px solid rgba(46,204,113,.3);border-radius:8px;padding:6px 12px;font-size:.76rem;font-weight:600;color:#2ecc71}
+.btn-wh{display:flex;align-items:center;justify-content:center;gap:10px;background:#25D366;color:#fff;padding:17px 28px;border-radius:50px;font-weight:800;font-size:.98rem;transition:all .3s;border:none;cursor:pointer;font-family:var(--font);width:100%;text-align:center}
+.btn-wh:hover{background:#1ebe5d;transform:translateY(-3px);box-shadow:0 12px 30px rgba(37,211,102,.4)}
+.btn-wh svg{width:22px;height:22px;fill:#fff;flex-shrink:0}
+.wh-stages-title{font-family:var(--display);font-weight:900;font-size:1.3rem;color:#fff;text-align:center;margin-bottom:28px}
+.wh-stages{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1050px;margin:0 auto 60px}
+.wh-stage{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:28px 22px;text-align:center;transition:all .3s}
+.wh-stage:hover{background:rgba(0,180,216,.12);border-color:rgba(0,180,216,.35);transform:translateY(-6px)}
+.wh-stage-num{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--cyan-dark));color:#fff;font-family:var(--display);font-weight:900;font-size:1.1rem;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;box-shadow:0 4px 14px rgba(0,180,216,.4)}
+.wh-stage h3{font-family:var(--display);font-weight:700;font-size:1rem;color:#fff;margin-bottom:8px}
+.wh-stage p{font-size:.83rem;color:rgba(255,255,255,.62);line-height:1.6}
+.wh-benefits-title{font-family:var(--display);font-weight:900;font-size:1.3rem;color:#fff;text-align:center;margin-bottom:28px}
+.wh-benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1050px;margin:0 auto 50px}
+.wh-benefit{display:flex;align-items:flex-start;gap:14px;background:rgba(255,255,255,.04);border-radius:12px;padding:18px}
+.wh-bicon{font-size:1.8rem;flex-shrink:0;margin-top:2px}
+.wh-benefit h4{font-weight:700;font-size:.9rem;color:#fff;margin-bottom:4px}
+.wh-benefit p{font-size:.8rem;color:rgba(255,255,255,.58);line-height:1.55}
+.wh-cta-bar{max-width:700px;margin:0 auto;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:32px;text-align:center}
+.wh-cta-bar h3{font-family:var(--display);font-weight:900;font-size:1.4rem;color:#fff;margin-bottom:8px}
+.wh-cta-bar p{color:rgba(255,255,255,.65);font-size:.9rem;margin-bottom:24px}
+.wh-cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+@media(max-width:768px){
+  .wh-grid{grid-template-columns:1fr;text-align:center}
+  .wh-img-side{margin-bottom:10px}
+  .wh-specs{justify-content:center}
+  .wh-stages{grid-template-columns:1fr}
+  .wh-benefits{grid-template-columns:1fr}
+  .wh-guarantees{justify-content:center}
+}
+
+/* ══════════════════════════════════════════════════════════
    ── REVIEWS ─────────────────────────────────────────────
 ══════════════════════════════════════════════════════════ */
 #reviews{background:#fff}
@@ -172,15 +221,11 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;heigh
 .g-total{font-size:.8rem;color:var(--muted)}
 .rev-google-link{display:inline-flex;align-items:center;gap:8px;background:#fff;border:2px solid var(--border);border-radius:50px;padding:10px 24px;font-size:.85rem;font-weight:700;color:var(--navy);transition:all .3s}
 .rev-google-link:hover{border-color:var(--cyan);color:var(--cyan-dark);transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,180,216,.18)}
-
-/* Carrusel */
 .rev-track-wrap{overflow:hidden;position:relative;max-width:1100px;margin:0 auto}
 .rev-track-wrap::before,.rev-track-wrap::after{content:'';position:absolute;top:0;bottom:0;width:60px;z-index:2;pointer-events:none}
 .rev-track-wrap::before{left:0;background:linear-gradient(to right,#fff,transparent)}
 .rev-track-wrap::after{right:0;background:linear-gradient(to left,#fff,transparent)}
 .rev-track{display:flex;gap:20px;transition:transform .55s cubic-bezier(.4,0,.2,1)}
-
-/* Tarjeta de reseña */
 .rev-card{background:var(--light);border-radius:var(--radius);padding:26px 22px;min-width:286px;max-width:286px;flex-shrink:0;display:flex;flex-direction:column;gap:13px;border-top:4px solid #FBBC05;box-shadow:var(--shadow);transition:transform .3s,box-shadow .3s}
 .rev-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
 .rev-top{display:flex;align-items:center;gap:12px}
@@ -191,15 +236,12 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;heigh
 .rev-stars span{color:#FBBC05;font-size:1.05rem}
 .rev-text{font-size:.87rem;color:var(--text);line-height:1.68;flex:1;font-style:italic}
 .rev-verified{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;color:#4285F4;font-weight:600;margin-top:2px}
-
-/* Controles */
 .rev-controls{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:32px}
 .rev-btn{width:42px;height:42px;border-radius:50%;border:2px solid var(--border);background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.2rem;transition:all .3s;color:var(--navy);line-height:1}
 .rev-btn:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
 .rev-dots{display:flex;gap:7px;align-items:center}
 .rdot{width:8px;height:8px;border-radius:50%;background:var(--border);transition:all .35s;cursor:pointer;border:none;padding:0}
 .rdot.active{background:var(--navy);width:22px;border-radius:4px}
-
 /* ── ABOUT ─────────────────────────────────────────────── */
 #about{background:#fff}
 .about-grid{max-width:900px;margin:0 auto;display:grid;grid-template-columns:280px 1fr;gap:60px;align-items:center}
@@ -213,7 +255,6 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;heigh
 .about-p{color:var(--text);line-height:1.8;font-size:.92rem;margin-bottom:14px}
 .tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
 .tag{background:var(--white);border:1px solid var(--border);border-radius:50px;padding:5px 14px;font-size:.79rem;font-weight:600;color:var(--navy)}
-
 /* ── CONTACT ───────────────────────────────────────────── */
 #contact{background:linear-gradient(135deg,var(--cyan-dark) 0%,var(--navy) 100%);text-align:center;color:#fff}
 #contact .sec-title{color:#fff}
@@ -224,19 +265,16 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;heigh
 .ccard h3{font-size:.78rem;text-transform:uppercase;letter-spacing:1.5px;opacity:.65;margin-bottom:5px}
 .ccard p{font-weight:700;font-size:1.05rem}
 .contact-sub{margin-top:36px;opacity:.55;font-size:.85rem}
-
 /* ── FOOTER ────────────────────────────────────────────── */
 footer{background:var(--dark);color:rgba(255,255,255,.5);text-align:center;padding:28px 20px;font-size:.82rem}
 footer a{color:var(--cyan)}
 footer strong{color:#fff}
-
 /* ── WHATSAPP FLOAT ────────────────────────────────────── */
 .wa-btn{position:fixed;bottom:26px;right:26px;width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(37,211,102,.5);z-index:9999;transition:all .3s}
 .wa-btn:hover{transform:scale(1.12) translateY(-3px);box-shadow:0 14px 34px rgba(37,211,102,.6)}
 .wa-btn svg{width:32px;height:32px;fill:#fff}
 .wa-ring{position:absolute;width:60px;height:60px;border-radius:50%;background:rgba(37,211,102,.45);animation:ring 2.2s ease-out infinite}
 @keyframes ring{0%{transform:scale(1);opacity:.9}100%{transform:scale(1.85);opacity:0}}
-
 /* ── MOBILE ────────────────────────────────────────────── */
 @media(max-width:768px){
   section{padding:60px 16px}
@@ -279,6 +317,7 @@ footer strong{color:#fff}
       <li><a href="#contaminants">Beneficios</a></li>
       <li><a href="#stages">Sistema</a></li>
       <li><a href="#calculator">Ahorra</a></li>
+      <li><a href="#wholehouse">Casa Completa</a></li>
       <li><a href="#reviews">Reseñas</a></li>
       <li><a href="#about">Sobre Mí</a></li>
       <li><a href="#contact">Contacto</a></li>
@@ -399,7 +438,7 @@ footer strong{color:#fff}
       <div class="prod-info">
         <span class="sec-badge" style="background:var(--orange)">⭐ Más Vendido</span>
         <h3 class="prod-name">Sistema RO-WG50</h3>
-        <p class="prod-tag">Purificador Ósmosis Inversa · 5 Etapas · 50 GALONES POR DÍA· </p>
+        <p class="prod-tag">Purificador Ósmosis Inversa · 5 Etapas · 50 GALONES POR DÍA</p>
         <ul class="feat-list" aria-label="Incluye">
           <li><span class="fi">✓</span> 5 etapas de filtración avanzada</li>
           <li><span class="fi">✓</span> Instalación profesional completa</li>
@@ -429,17 +468,106 @@ footer strong{color:#fff}
 </section>
 
 <!-- ═══════════════════════════════════════════════════════
+     🏠 SECCIÓN: FILTRO WHOLE HOUSE — BODYGUARD
+     ★ Para modificar: edita los textos directamente aquí
+     ★ Para cambiar la imagen: reemplaza la URL en wh-product-img
+════════════════════════════════════════════════════════ -->
+<section id="wholehouse" aria-labelledby="wh-title">
+  <div class="wrap">
+    <span class="wh-badge" style="display:block;width:fit-content;margin:0 auto 12px">🏠 Protección Para Toda La Casa</span>
+    <h2 class="sec-title" id="wh-title" style="color:#fff">Filtro de Agua Para Todo Tu Hogar</h2>
+    <p class="sec-sub" style="color:rgba(255,255,255,.65)">Agua 100% limpia en cada grifo, ducha, lavadora y cocina. El Bodyguard protege a toda tu familia desde la entrada principal del agua.</p>
+
+    <div class="wh-grid reveal">
+      <div class="wh-img-side">
+        <div class="wh-img-bg"></div>
+        <!-- ★ REEMPLAZA con la URL de tu foto del Bodyguard en GitHub -->
+        <img src="https://github.com/rafael33pr/osmosispr/blob/main/osmosis_inversa_1.jpg?raw=true"
+             alt="Bodyguard Whole House Water Filter — Filtro de Agua Para Toda la Casa Puerto Rico"
+             class="wh-product-img" loading="lazy">
+      </div>
+      <div>
+        <div class="wh-tag-pill">💧 US Water Systems · Hecho en EE.UU.</div>
+        <h3 class="wh-title">Bodyguard<br><em>Whole House Filter</em></h3>
+        <p class="wh-sub">El sistema de filtración más avanzado del mercado para toda la casa. Elimina el cloro, cloraminas, metales pesados, químicos y contaminantes de <strong style="color:#fff">cada grifo de tu hogar</strong> — cocina, baños, ducha, lavadora y más.</p>
+        <div class="wh-specs">
+          <div class="wh-spec"><strong>10 GPM</strong><span>Flujo continuo</span></div>
+          <div class="wh-spec"><strong>3 Etapas</strong><span>Filtración avanzada</span></div>
+          <div class="wh-spec"><strong>NSF/ANSI</strong><span>Certificado 61</span></div>
+          <div class="wh-spec"><strong>0 kW</strong><span>Sin electricidad</span></div>
+          <div class="wh-spec"><strong>USA</strong><span>Fabricado EE.UU.</span></div>
+          <div class="wh-spec"><strong>100%</strong><span>Toda la casa</span></div>
+        </div>
+        <div class="wh-price-box">
+          <p class="wh-price-from">Pagos mensuales desde</p>
+          <div class="wh-price"><sup>$</sup>110 — $131<sub>/mes</sub></div>
+          <p class="wh-price-note">Instalación por plomero licenciado · Análisis de calidad de agua incluido gratis</p>
+          <div class="wh-guarantees">
+            <span class="wh-guar">✅ 5 años en piezas</span>
+            <span class="wh-guar">✅ 25 años en el tanque</span>
+            <span class="wh-guar">✅ Análisis gratis</span>
+          </div>
+        </div>
+        <a href="https://wa.me/17879729553?text=Hola%20Water%20Guru!%20Quiero%20pedir%20cotización%20para%20el%20filtro%20Bodyguard%20Whole%20House."
+           class="btn-wh" target="_blank" rel="noopener" aria-label="Pedir cotización Bodyguard por WhatsApp">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          💬 Pedir Cotización por WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <p class="wh-stages-title">⚙️ Sistema de Filtración en 3 Etapas</p>
+    <div class="wh-stages reveal">
+      <div class="wh-stage">
+        <div class="wh-stage-num">1</div>
+        <h3>Filtro Magna de Sedimento — 5 Micrones</h3>
+        <p>El filtro de sedimento más grande del mercado, 100% fabricado en EE.UU. Captura arena, óxido y partículas. Doble sello O-ring para cero bypass de agua contaminada.</p>
+      </div>
+      <div class="wh-stage">
+        <div class="wh-stage-num">2</div>
+        <h3>Tanque Bodyguard — Carbón Catalítico + KDF-55 + GAC</h3>
+        <p>Triple combinación: carbón catalítico elimina cloraminas, carbón activado de coco elimina cloro y químicos, y KDF-55 elimina metales pesados y previene bacterias. Sin pérdida de presión.</p>
+      </div>
+      <div class="wh-stage">
+        <div class="wh-stage-num">3</div>
+        <h3>Sistema UV Pulsar (Opcional)</h3>
+        <p>Upgrade disponible para desinfección total. Elimina el 99.99% de patógenos, virus, bacterias y protozoos. Cámara de 36" — la más grande de su clase.</p>
+      </div>
+    </div>
+
+    <p class="wh-benefits-title">✨ ¿Qué Cambia en Tu Hogar?</p>
+    <div class="wh-benefits reveal">
+      <div class="wh-benefit"><div class="wh-bicon">🚿</div><div><h4>Piel y Cabello Más Saludables</h4><p>El agua filtrada en la ducha reduce la resequedad y el daño al cabello causado por el cloro.</p></div></div>
+      <div class="wh-benefit"><div class="wh-bicon">👕</div><div><h4>Ropa Más Duradera</h4><p>El cloro desgasta las telas. Con agua filtrada tu ropa conserva colores y textura por más tiempo.</p></div></div>
+      <div class="wh-benefit"><div class="wh-bicon">🍳</div><div><h4>Mejor Sabor en Todo lo que Cocinas</h4><p>El agua sin químicos potencia el sabor de tus comidas, café y bebidas en general.</p></div></div>
+      <div class="wh-benefit"><div class="wh-bicon">💨</div><div><h4>Mejor Calidad del Aire Interior</h4><p>Filtra los químicos que se vaporizan al ducharse o cocinar, mejorando el aire dentro del hogar.</p></div></div>
+      <div class="wh-benefit"><div class="wh-bicon">🔧</div><div><h4>Protege Tuberías y Electrodomésticos</h4><p>El agua limpia extiende la vida de calentadores, lavadoras, lavavajillas y toda la plomería.</p></div></div>
+      <div class="wh-benefit"><div class="wh-bicon">💪</div><div><h4>Sin Pérdida de Presión</h4><p>Tuberías internas de 1 pulgada completa. El Bodyguard garantiza flujo y presión en toda la casa.</p></div></div>
+    </div>
+
+    <div class="wh-cta-bar reveal">
+      <h3>¿Listo para Proteger Toda Tu Casa?</h3>
+      <p>Análisis de calidad de agua gratis · Instalado por plomero licenciado · Garantía 5 años en piezas y 25 años en el tanque</p>
+      <div class="wh-cta-row">
+        <a href="https://wa.me/17879729553?text=Hola%20Water%20Guru!%20Quiero%20pedir%20cotización%20para%20el%20filtro%20Bodyguard%20Whole%20House."
+           class="btn-wh" style="width:auto;padding:15px 32px" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="#fff" style="flex-shrink:0" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Pedir Cotización — WhatsApp
+        </a>
+        <a href="tel:+17879729553" class="btn-a" style="background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.25)">📞 787-972-9553</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
      ★ SECCIÓN DE RESEÑAS DE GOOGLE
-     Para modificar: cambia los datos dentro de cada .rev-card
-     Para añadir más reseñas: duplica un bloque .rev-card completo
 ════════════════════════════════════════════════════════ -->
 <section id="reviews" aria-labelledby="rev-title">
   <div class="wrap">
     <span class="sec-badge" style="display:block;width:fit-content;margin:0 auto 12px">Clientes Satisfechos</span>
     <h2 class="sec-title" id="rev-title">Lo Que Dicen Nuestros Clientes</h2>
     <p class="sec-sub">Familias reales en Puerto Rico que ya disfrutan de agua pura en su hogar.</p>
-
-    <!-- ★ CAMBIA: número de puntuación y total de reseñas -->
     <div class="reviews-header reveal">
       <div class="g-score-box">
         <div class="g-logo"><span class="g1">G</span><span class="g2">o</span><span class="g3">o</span><span class="g4">g</span><span class="g5">l</span><span class="g6">e</span></div>
@@ -450,86 +578,50 @@ footer strong{color:#fff}
           <div class="g-total">Basado en 11 reseñas de Google</div>
         </div>
       </div>
-      <!-- ★ CAMBIA: pon aquí el link de tu perfil de Google Business -->
       <a href="https://share.google/uUltdnVjVDRoS7BNw" target="_blank" rel="noopener" class="rev-google-link">
         <span style="color:#FBBC05">★</span> Ver todas las reseñas en Google
       </a>
     </div>
-
-    <!-- ════════════════════════════════════════════════════
-         CARRUSEL DE RESEÑAS
-         ★ Para editar una reseña: cambia el texto dentro de cada .rev-card
-         ★ Para añadir una reseña: copia un bloque .rev-card y pégalo al final
-         ★ Colores de avatar disponibles: #4285F4 (azul) · #EA4335 (rojo)
-           #FBBC05 (amarillo) · #34A853 (verde) · #0077b6 · #e76f51
-    ════════════════════════════════════════════════════ -->
     <div class="rev-track-wrap">
       <div class="rev-track" id="revTrack">
-
         <div class="rev-card">
-          <div class="rev-top">
-            <div class="rev-avatar" style="background:#4285F4">M</div>
-            <div><div class="rev-name">Virgen Leon</div><div class="rev-date">Hace 2 semanas</div></div>
-          </div>
+          <div class="rev-top"><div class="rev-avatar" style="background:#4285F4">V</div><div><div class="rev-name">Virgen Leon</div><div class="rev-date">Hace 2 semanas</div></div></div>
           <div class="rev-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-          <p class="rev-text">"Excelente servicio, buen trato, cordial y servicial!!!
-"</p>
+          <p class="rev-text">"Excelente servicio, buen trato, cordial y servicial!!!"</p>
           <span class="rev-verified">✅ Reseña verificada de Google</span>
         </div>
-
         <div class="rev-card">
-          <div class="rev-top">
-            <div class="rev-avatar" style="background:#EA4335">C</div>
-            <div><div class="rev-name">Mercedes Blasco</div><div class="rev-date">Hace 34 semanas</div></div>
-          </div>
+          <div class="rev-top"><div class="rev-avatar" style="background:#EA4335">M</div><div><div class="rev-name">Mercedes Blasco</div><div class="rev-date">Hace 34 semanas</div></div></div>
           <div class="rev-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-          <p class="rev-text">"Buen Servicio.  Lo recomiendo."</p>
+          <p class="rev-text">"Buen Servicio. Lo recomiendo."</p>
           <span class="rev-verified">✅ Reseña verificada de Google</span>
         </div>
-
         <div class="rev-card">
-          <div class="rev-top">
-            <div class="rev-avatar" style="background:#34A853">L</div>
-            <div><div class="rev-name">Minellys Alicea rosa</div><div class="rev-date">Hace 38 semanas</div></div>
-          </div>
+          <div class="rev-top"><div class="rev-avatar" style="background:#34A853">M</div><div><div class="rev-name">Minellys Alicea Rosa</div><div class="rev-date">Hace 38 semanas</div></div></div>
           <div class="rev-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
           <p class="rev-text">"El mejor dinero que he invertido para mi familia. El agua sabe pura, sin olor a cloro. Rafael explica todo con paciencia y claridad."</p>
           <span class="rev-verified">✅ Reseña verificada de Google</span>
         </div>
-
         <div class="rev-card">
-          <div class="rev-top">
-            <div class="rev-avatar" style="background:#FBBC05">J</div>
-            <div><div class="rev-name">Adrian Lugo </div><div class="rev-date"> Julio 23,2024 </div></div>
-          </div>
+          <div class="rev-top"><div class="rev-avatar" style="background:#FBBC05">A</div><div><div class="rev-name">Adrian Lugo</div><div class="rev-date">Julio 23, 2024</div></div></div>
           <div class="rev-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
           <p class="rev-text">"Super Contento con su servicios y productos lo recomiendo servicio trato siempre dispuesto ayudar y las pruebas de calidad de agua excelente"</p>
           <span class="rev-verified">✅ Reseña verificada de Google</span>
         </div>
-
         <div class="rev-card">
-          <div class="rev-top">
-            <div class="rev-avatar" style="background:#0077b6">A</div>
-            <div><div class="rev-name">Jose Colon</div><div class="rev-date">Hace 1 mes</div></div>
-          </div>
+          <div class="rev-top"><div class="rev-avatar" style="background:#0077b6">J</div><div><div class="rev-name">Jose Colon</div><div class="rev-date">Hace 1 mes</div></div></div>
           <div class="rev-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
           <p class="rev-text">"Exelente trabajo muy buena la orientación super humilde con mucho conocimiento recomendado 200%"</p>
           <span class="rev-verified">✅ Reseña verificada de Google</span>
         </div>
-
         <div class="rev-card">
-          <div class="rev-top">
-            <div class="rev-avatar" style="background:#e76f51">R</div>
-            <div><div class="rev-name">Luis Antonio Fuentes </div><div class="rev-date">Hace 5 días</div></div>
-          </div>
+          <div class="rev-top"><div class="rev-avatar" style="background:#e76f51">L</div><div><div class="rev-name">Luis Antonio Fuentes</div><div class="rev-date">Hace 5 días</div></div></div>
           <div class="rev-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-          <p class="rev-text">"Mi experiencia fue y es excelente, en servicio, rapidez un trato de excelencia y comprensión ante los que deseamos un trabajo y equipo de verdadera calidad y a un costo accesible para todos, gracias por su servicio, lo recomiendo 1000% nuevamente, excelente gracias"</p>
+          <p class="rev-text">"Mi experiencia fue y es excelente, en servicio, rapidez un trato de excelencia y comprensión ante los que deseamos un trabajo y equipo de verdadera calidad y a un costo accesible para todos, gracias por su servicio, lo recomiendo 1000%"</p>
           <span class="rev-verified">✅ Reseña verificada de Google</span>
         </div>
-
       </div>
     </div>
-
     <div class="rev-controls">
       <button class="rev-btn" id="revPrev" aria-label="Reseña anterior">‹</button>
       <div class="rev-dots" id="revDots"></div>
@@ -612,14 +704,9 @@ footer strong{color:#fff}
 </a>
 
 <script>
-// ── Year
 document.getElementById('yr').textContent = new Date().getFullYear();
-
-// ── Navbar scroll
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 50), {passive:true});
-
-// ── Mobile menu
 const hbg = document.getElementById('hbg');
 const nLinks = document.getElementById('navLinks');
 hbg.addEventListener('click', () => {
@@ -630,8 +717,6 @@ nLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   nLinks.classList.remove('open');
   hbg.setAttribute('aria-expanded', false);
 }));
-
-// ── Calculator
 const MONTHLY = 38, ANNUAL = MONTHLY * 12;
 const PRICE_PER_CASE = 5;
 const sldr = document.getElementById('sldr');
@@ -663,15 +748,12 @@ function calcUpdate(){
 }
 sldr.addEventListener('input', calcUpdate);
 calcUpdate();
-
-// ── Reviews carousel
 (function(){
   const track = document.getElementById('revTrack');
   const cards = track.querySelectorAll('.rev-card');
   const dotsEl = document.getElementById('revDots');
   const total = cards.length;
   let cur = 0, autoT;
-
   cards.forEach((_,i)=>{
     const d = document.createElement('button');
     d.className = 'rdot' + (i===0?' active':'');
@@ -679,9 +761,7 @@ calcUpdate();
     d.addEventListener('click',()=>goTo(i));
     dotsEl.appendChild(d);
   });
-
   function cardW(){ return cards[0].offsetWidth + 20; }
-
   function goTo(n){
     cur = (n + total) % total;
     track.style.transform = `translateX(-${cur * cardW()}px)`;
@@ -695,8 +775,6 @@ calcUpdate();
   document.getElementById('revNext').addEventListener('click',()=>goTo(cur+1));
   document.getElementById('revPrev').addEventListener('click',()=>goTo(cur-1));
   resetAuto();
-
-  // Swipe en móvil
   let tx = 0;
   track.addEventListener('touchstart', e=>{ tx = e.touches[0].clientX; }, {passive:true});
   track.addEventListener('touchend', e=>{
@@ -704,8 +782,6 @@ calcUpdate();
     if(Math.abs(dx) > 40) goTo(dx < 0 ? cur+1 : cur-1);
   }, {passive:true});
 })();
-
-// ── Scroll reveal
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('on'); obs.unobserve(e.target); }});
 }, {threshold:.1, rootMargin:'0px 0px -40px 0px'});
