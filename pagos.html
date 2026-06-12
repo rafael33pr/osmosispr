@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Calculadora de Pago Water Guru</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    box-sizing:border-box;
+    font-family:'DM Sans', Arial, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    margin:0;
+    padding:20px;
+}
+
+.container{
+    max-width:500px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+h1{
+    text-align:center;
+    color:#0099cc;
+    margin-bottom:10px;
+    font-family:'DM Serif Display', serif;
+    font-weight:400;
+    letter-spacing:-.5px;
+}
+
+.sub{
+    text-align:center;
+    color:#666;
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    margin-top:20px;
+    margin-bottom:8px;
+    font-weight:700;
+    font-size:14px;
+    letter-spacing:.3px;
+}
+
+select,
+input[type=number]{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    font-family:'DM Sans', Arial, sans-serif;
+}
+
+input[type=range]{
+    width:100%;
+}
+
+.resultado{
+    margin-top:25px;
+    background:#eef8fc;
+    padding:20px;
+    border-radius:15px;
+}
+
+.linea{
+    display:flex;
+    justify-content:space-between;
+    margin:10px 0;
+}
+
+.pago{
+    text-align:center;
+    margin-top:20px;
+}
+
+.pago h2{
+    font-size:42px;
+    color:#0099cc;
+    margin:0;
+    font-family:'DM Serif Display', serif;
+    font-weight:400;
+}
+
+.pago p{
+    margin:5px;
+    color:#666;
+}
+
+.btn{
+    width:100%;
+    margin-top:25px;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:#0099cc;
+    color:white;
+    font-size:18px;
+    font-family:'DM Sans', Arial, sans-serif;
+    font-weight:700;
+    cursor:pointer;
+    letter-spacing:.5px;
+}
+
+.btn:hover{
+    opacity:.9;
+}
+
+.valor-slider{
+    text-align:right;
+    font-weight:700;
+    color:#0099cc;
+}
+
+@media(max-width:600px){
+
+    h1{
+        font-size:24px;
+    }
+
+    .pago h2{
+        font-size:36px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>💧 Calcula tu Pago</h1>
+
+<div class="sub">
+Descubre cuánto podrías pagar al mes
+</div>
+
+<label>Producto</label>
+
+<select id="producto">
+    <option value="0">Purificador RO Xpert Water</option>
+    <option value="1">Purificador RO Alkalino</option>
+    <option value="2">Filtro Casa Completa (Punto de Uso)</option>
+    <option value="3">Filtro Casa Completa Premium</option>
+</select>
+
+<label>Pronto Pago</label>
+
+<input type="range"
+       id="pronto"
+       min="0"
+       max="3000"
+       value="0"
+       step="50">
+
+<div class="valor-slider" id="prontoValor">
+$0
+</div>
+
+<label>Meses</label>
+
+<input type="range"
+       id="meses"
+       min="4"
+       max="36"
+       value="24">
+
+<div class="valor-slider" id="mesesValor">
+24 meses
+</div>
+
+<label>APR Estimado</label>
+
+<select id="apr">
+    <option value="0">0%</option>
+    <option value="10">10%</option>
+    <option value="15" selected>15%</option>
+    <option value="20">20%</option>
+    <option value="25">25%</option>
+    <option value="30">30%</option>
+    <option value="35">35%</option>
+</select>
+
+<div class="resultado">
+
+<div class="linea">
+<span>Precio:</span>
+<span id="precio">$1,295</span>
+</div>
+
+<div class="linea">
+<span>Pronto:</span>
+<span id="prontoDisplay">-$0</span>
+</div>
+
+<div class="linea">
+<span>Monto financiado:</span>
+<span id="financiado">$1,295</span>
+</div>
+
+<div class="pago">
+
+<p>Pago estimado</p>
+
+<h2 id="mensual">$20.63</h2>
+
+<p id="diario">
+≈ $0.69 por día
+</p>
+
+</div>
+
+</div>
+
+<button class="btn" onclick="window.open('https://wa.me/17879729553','_blank')">
+SOLICITAR INFORMACIÓN
+</button>
+
+</div>
+
+<script>
+
+const producto   = document.getElementById("producto");
+const pronto     = document.getElementById("pronto");
+const meses      = document.getElementById("meses");
+const aprSelect  = document.getElementById("apr");
+
+const precios = [1295, 1595, 2395, 4395];
+
+function actualizar(){
+
+    const idx     = parseInt(producto.value);
+    let precio    = precios[idx];
+
+    let prontoPago = parseFloat(pronto.value);
+    let plazo      = parseFloat(meses.value);
+
+    if(prontoPago > precio){
+        prontoPago = precio;
+        pronto.value = precio;
+    }
+
+    let financiado = precio - prontoPago;
+
+    let apr = parseFloat(aprSelect.value) / 100;
+
+    let mensual;
+
+    if(apr === 0){
+        mensual = financiado / plazo;
+    } else {
+        let r = apr / 12;
+        mensual = (financiado * r) / (1 - Math.pow(1 + r, -plazo));
+    }
+
+    let diario = mensual / 30;
+
+    document.getElementById("precio").innerHTML        = "$" + precio.toLocaleString();
+    document.getElementById("prontoDisplay").innerHTML = "-$" + prontoPago.toLocaleString();
+    document.getElementById("financiado").innerHTML    = "$" + financiado.toLocaleString();
+    document.getElementById("mensual").innerHTML       = "$" + mensual.toFixed(2);
+    document.getElementById("diario").innerHTML        = "≈ $" + diario.toFixed(2) + " por día";
+    document.getElementById("prontoValor").innerHTML   = "$" + prontoPago.toLocaleString();
+    document.getElementById("mesesValor").innerHTML    = plazo + " meses";
+}
+
+producto.addEventListener("change", actualizar);
+pronto.addEventListener("input",    actualizar);
+meses.addEventListener("input",     actualizar);
+aprSelect.addEventListener("change",actualizar);
+
+actualizar();
+
+</script>
+
+</body>
+</html>
