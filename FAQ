@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preguntas Frecuentes | Filtro de Agua Bodyguard Whole House - Water Guru PR</title>
+<meta name="description" content="Todo lo que necesitas saber sobre el filtro de agua para toda la casa Bodyguard. Funcionamiento, etapas, modelos, mantenimiento, garantía y más. Water Guru Puerto Rico.">
+<meta name="robots" content="index, follow">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --blue:#0077C8;
+    --blue-dark:#005A9C;
+    --blue-light:#E8F4FD;
+    --blue-soft:#4FB7E8;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:'DM Sans', Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f8fb;
+    color:#333;
+    line-height:1.65;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ===== NAV ===== */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(8px);
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.nav-inner{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 20px;
+}
+
+.logo{
+    font-family:'DM Serif Display', serif;
+    font-size:22px;
+    color:var(--blue);
+    font-weight:400;
+}
+
+.logo span{
+    font-style:italic;
+}
+
+.nav-cta{
+    background:var(--blue);
+    color:#fff;
+    padding:10px 18px;
+    border-radius:30px;
+    font-weight:700;
+    font-size:14px;
+    letter-spacing:.3px;
+    white-space:nowrap;
+    box-shadow:0 4px 14px rgba(0,119,200,.25);
+}
+
+.nav-cta:hover{
+    opacity:.9;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+    position:relative;
+    max-width:1100px;
+    margin:auto;
+    padding:50px 20px 40px;
+    text-align:center;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:-120px;
+    right:-120px;
+    width:320px;
+    height:320px;
+    background:radial-gradient(circle, var(--blue-light) 0%, transparent 70%);
+    z-index:-1;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    bottom:-100px;
+    left:-100px;
+    width:280px;
+    height:280px;
+    background:radial-gradient(circle, var(--blue-light) 0%, transparent 70%);
+    z-index:-1;
+}
+
+.tag{
+    display:inline-block;
+    background:var(--blue-light);
+    color:var(--blue);
+    font-weight:700;
+    font-size:13px;
+    letter-spacing:.5px;
+    padding:8px 18px;
+    border-radius:30px;
+    margin-bottom:18px;
+    text-transform:uppercase;
+}
+
+.hero h1{
+    font-family:'DM Serif Display', serif;
+    font-weight:400;
+    font-size:42px;
+    line-height:1.25;
+    color:#1a1a1a;
+    letter-spacing:-.5px;
+    margin-bottom:18px;
+}
+
+.hero h1 em{
+    background:linear-gradient(135deg, var(--blue), var(--blue-soft));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    font-style:italic;
+}
+
+.hero p.lead{
+    max-width:650px;
+    margin:0 auto 30px;
+    color:#667;
+    font-size:17px;
+}
+
+.hero-stats{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    margin-bottom:34px;
+}
+
+.hero-stats div{
+    text-align:center;
+}
+
+.hero-stats h3{
+    font-family:'DM Serif Display', serif;
+    font-size:34px;
+    color:var(--blue);
+    font-weight:400;
+}
+
+.hero-stats p{
+    font-size:13px;
+    color:#888;
+    margin-top:2px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:16px 30px;
+    border-radius:14px;
+    font-weight:700;
+    font-size:15px;
+    letter-spacing:.3px;
+    border:none;
+    cursor:pointer;
+    transition:transform .15s ease, box-shadow .15s ease, opacity .15s ease;
+}
+
+.btn-primary{
+    background:linear-gradient(135deg, var(--blue), var(--blue-soft));
+    color:#fff;
+    box-shadow:0 8px 20px rgba(0,119,200,.28);
+}
+
+.btn-primary:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 24px rgba(0,119,200,.35);
+}
+
+.btn-outline{
+    background:#fff;
+    color:var(--blue);
+    border:2px solid var(--blue-light);
+}
+
+.btn-outline:hover{
+    background:var(--blue-light);
+    border-color:var(--blue-light);
+}
+
+/* ===== SECTION GENERAL ===== */
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.section-header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-tag{
+    color:var(--blue);
+    font-weight:700;
+    font-size:13px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    margin-bottom:8px;
+}
+
+.section-header h2{
+    font-family:'DM Serif Display', serif;
+    font-weight:400;
+    font-size:32px;
+    color:#1a1a1a;
+    letter-spacing:-.5px;
+}
+
+.section-header p{
+    color:#777;
+    max-width:600px;
+    margin:12px auto 0;
+}
+
+/* ===== FAQ GROUPS ===== */
+
+.faq-group{
+    margin-bottom:36px;
+}
+
+.faq-group-title{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:'DM Serif Display', serif;
+    font-size:22px;
+    color:var(--blue);
+    font-weight:400;
+    margin-bottom:16px;
+    padding-bottom:8px;
+    border-bottom:2px solid var(--blue-light);
+}
+
+.faq-item{
+    background:#fff;
+    border-radius:16px;
+    box-shadow:0 2px 12px rgba(0,80,140,.06);
+    margin-bottom:12px;
+    overflow:hidden;
+    border:1px solid transparent;
+    transition:border-color .15s ease;
+}
+
+.faq-item[open]{
+    border-color:var(--blue-light);
+}
+
+.faq-item summary{
+    list-style:none;
+    cursor:pointer;
+    padding:18px 20px;
+    font-weight:700;
+    font-size:15.5px;
+    color:#1a1a1a;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+}
+
+.faq-item summary::-webkit-details-marker{
+    display:none;
+}
+
+.faq-item summary::after{
+    content:"+";
+    flex-shrink:0;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:var(--blue-light);
+    color:var(--blue);
+    font-size:18px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.faq-item[open] summary::after{
+    content:"–";
+    background:var(--blue);
+    color:#fff;
+}
+
+.faq-item .faq-body{
+    padding:0 20px 20px;
+    color:#5a6470;
+    font-size:15px;
+}
+
+.faq-item .faq-body p{
+    margin-bottom:10px;
+}
+
+.faq-item .faq-body ul{
+    margin:10px 0 0 20px;
+}
+
+.faq-item .faq-body li{
+    margin-bottom:6px;
+}
+
+.faq-item .faq-body strong{
+    color:#1a1a1a;
+}
+
+/* ===== CALCULATOR CTA ===== */
+
+.calc-cta{
+    background:linear-gradient(135deg, var(--blue), var(--blue-soft));
+    border-radius:24px;
+    padding:50px 30px;
+    text-align:center;
+    color:#fff;
+    box-shadow:0 14px 34px rgba(0,119,200,.25);
+}
+
+.calc-cta h2{
+    font-family:'DM Serif Display', serif;
+    font-weight:400;
+    font-size:30px;
+    margin-bottom:12px;
+}
+
+.calc-cta p{
+    max-width:550px;
+    margin:0 auto 28px;
+    opacity:.95;
+    font-size:16px;
+}
+
+.calc-cta .btn-white{
+    background:#fff;
+    color:var(--blue);
+    padding:16px 32px;
+    border-radius:14px;
+    font-weight:700;
+    font-size:16px;
+    display:inline-block;
+    transition:transform .15s ease;
+}
+
+.calc-cta .btn-white:hover{
+    transform:translateY(-2px);
+}
+
+/* ===== FEATURE GRID (info general) ===== */
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    gap:18px;
+}
+
+.feature-card{
+    background:#fff;
+    border-radius:18px;
+    padding:26px 22px;
+    box-shadow:0 2px 12px rgba(0,80,140,.06);
+    text-align:center;
+    transition:transform .15s ease, box-shadow .15s ease;
+}
+
+.feature-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 22px rgba(0,80,140,.1);
+}
+
+.feature-card .icon{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.feature-card h3{
+    font-size:16px;
+    margin-bottom:6px;
+    color:#1a1a1a;
+}
+
+.feature-card p{
+    font-size:13.5px;
+    color:#888;
+}
+
+/* ===== MODELOS GRID ===== */
+
+.modelos-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(160px,1fr));
+    gap:14px;
+}
+
+.modelo-card{
+    background:var(--blue-light);
+    border-radius:18px;
+    padding:24px 16px;
+    text-align:center;
+    border:2px solid transparent;
+}
+
+.modelo-card.featured{
+    border-color:var(--blue);
+    background:#fff;
+    box-shadow:0 8px 22px rgba(0,119,200,.15);
+}
+
+.modelo-card .gpm{
+    font-family:'DM Serif Display', serif;
+    font-size:36px;
+    color:var(--blue);
+}
+
+.modelo-card .gpm span{
+    font-size:15px;
+}
+
+.modelo-card h4{
+    margin:6px 0 6px;
+    font-size:14.5px;
+    color:#1a1a1a;
+}
+
+.modelo-card p{
+    font-size:13px;
+    color:#777;
+}
+
+/* ===== WARRANTY CARDS ===== */
+
+.warranty-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    gap:14px;
+    margin-top:14px;
+}
+
+.warranty-card{
+    background:var(--blue-light);
+    border-radius:16px;
+    padding:20px;
+    text-align:center;
+}
+
+.warranty-card .num{
+    font-family:'DM Serif Display', serif;
+    font-size:30px;
+    color:var(--blue);
+    margin-bottom:4px;
+}
+
+.warranty-card p{
+    font-size:13.5px;
+    color:#5a6470;
+}
+
+/* ===== FINAL CTA ===== */
+
+.final-cta{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.final-cta h2{
+    font-family:'DM Serif Display', serif;
+    font-weight:400;
+    font-size:30px;
+    margin-bottom:14px;
+}
+
+.final-cta p{
+    color:#777;
+    max-width:550px;
+    margin:0 auto 26px;
+}
+
+.final-cta .buttons{
+    display:flex;
+    justify-content:center;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    background:#0b1f33;
+    color:#9fb4c7;
+    text-align:center;
+    padding:40px 20px;
+    font-size:13.5px;
+}
+
+footer .flogo{
+    font-family:'DM Serif Display', serif;
+    font-size:20px;
+    color:#fff;
+    margin-bottom:10px;
+}
+
+footer a{
+    color:var(--blue-soft);
+}
+
+footer p{
+    margin-top:6px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+    .hero{
+        padding:36px 18px 30px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero p.lead{
+        font-size:15.5px;
+    }
+
+    .hero-stats{
+        gap:26px;
+    }
+
+    .hero-stats h3{
+        font-size:26px;
+    }
+
+    .section-header h2{
+        font-size:26px;
+    }
+
+    section{
+        padding:46px 18px;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .hero-buttons,
+    .final-cta .buttons{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .calc-cta{
+        padding:36px 20px;
+        border-radius:18px;
+    }
+
+    .calc-cta h2{
+        font-size:24px;
+    }
+
+    .calc-cta .btn-white{
+        width:100%;
+    }
+}
+
+@media(max-width:420px){
+
+    .hero h1{
+        font-size:27px;
+    }
+
+    .hero-stats{
+        gap:18px 26px;
+    }
+
+    .nav-inner{
+        padding:12px 16px;
+    }
+
+    .logo{
+        font-size:19px;
+    }
+
+    .nav-cta{
+        font-size:13px;
+        padding:9px 14px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAV ===== -->
+<div class="navbar">
+    <div class="nav-inner">
+        <div class="logo">💧 Water<span>Guru</span></div>
+        <a class="nav-cta" href="https://wa.me/17879729553?text=Hola%20Water%20Guru!%20Tengo%20preguntas%20sobre%20el%20filtro%20Bodyguard%20para%20toda%20la%20casa." target="_blank">💬 WhatsApp</a>
+    </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+    <div class="tag">Filtro Para Toda La Casa</div>
+    <h1>Todo Lo Que Necesitas Saber Sobre el <em>Bodyguard</em></h1>
+    <p class="lead">
+        Respondemos las preguntas más comunes sobre el sistema de filtración de agua para toda la casa Bodyguard de US Water Systems. Información clara y sencilla, sin tecnicismos, para que tomes la mejor decisión para tu hogar en Puerto Rico.
+    </p>
+
+    <div class="hero-stats">
+        <div>
+            <h3>0 kW</h3>
+            <p>Sin Electricidad</p>
+        </div>
+        <div>
+            <h3>3</h3>
+            <p>Etapas de Filtración</p>
+        </div>
+        <div>
+            <h3>USA</h3>
+            <p>Hecho en EE.UU.</p>
+        </div>
+        <div>
+            <h3>3 Años</h3>
+            <p>Garantía Water Guru PR</p>
+        </div>
+    </div>
+
+    <div class="hero-buttons">
+        <a class="btn btn-primary" href="https://www.osmosispr.com/pagos" target="_blank">💳 Calcula Tu Pago Mensual</a>
+        <a class="btn btn-outline" href="https://wa.me/17879729553?text=Hola%20Water%20Guru!%20Quiero%20información%20sobre%20el%20filtro%20Bodyguard%20para%20toda%20la%20casa." target="_blank">💬 Pedir Información</a>
+    </div>
+</section>
+
+<!-- ===== INFO GENERAL ===== -->
+<section id="general">
+    <div class="section-header">
+        <div class="section-tag">Información General</div>
+        <h2>¿Qué Es y Cómo Funciona el Bodyguard?</h2>
+        <p>Un sistema diseñado para proteger toda tu casa, sin electricidad y sin desperdiciar agua.</p>
+    </div>
+
+    <div class="feature-grid">
+        <div class="feature-card">
+            <div class="icon">⚡</div>
+            <h3>Sin Electricidad</h3>
+            <p>Funciona de forma completamente ecológica, sin necesidad de enchufes ni consumo eléctrico.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">💧</div>
+            <h3>Sin Desperdicio</h3>
+            <p>A diferencia de otros sistemas, el Bodyguard no desperdicia ni una gota de agua durante el proceso.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">⬆️</div>
+            <h3>Filtración Ascendente</h3>
+            <p>El proceso "upflow" optimiza el contacto con los medios filtrantes sin obstrucciones ni pérdida de presión.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">🧪</div>
+            <h3>Elimina Contaminantes</h3>
+            <p>Cloro, cloraminas, MTBE, TTHM, PFOA, PFAS, metales pesados, malos olores, sabores y sedimentos.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq">
+
+    <div class="section-header">
+        <div class="section-tag">Preguntas Frecuentes</div>
+        <h2>Preguntas y Respuestas</h2>
+        <p>Toca cualquier pregunta para ver la respuesta completa.</p>
+    </div>
+
+    <!-- GRUPO 1: Funcionamiento -->
+    <div class="faq-group">
+        <div class="faq-group-title">⚙️ Funcionamiento y Filtración</div>
+
+        <details class="faq-item">
+            <summary>¿Qué es el sistema Bodyguard y cómo funciona?</summary>
+            <div class="faq-body">
+                <p>Es un sistema avanzado de filtración de agua para toda la casa diseñado para eliminar una amplia variedad de contaminantes químicos y mejorar el sabor del agua. Funciona mediante un proceso de filtración ascendente ("upflow") que optimiza el contacto del agua con los materiales filtrantes sin generar obstrucciones ni reducir la presión.</p>
+                <p>Además, opera de forma ecológica: <strong>no requiere electricidad y no desperdicia agua</strong>.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>¿Qué contaminantes elimina este sistema?</summary>
+            <div class="faq-body">
+                <p>El filtro está diseñado para neutralizar un amplio espectro de impurezas, incluyendo:</p>
+                <ul>
+                    <li>Cloro y cloraminas</li>
+                    <li>Químicos y toxinas como MTBE, TTHM, PFOA y PFAS</li>
+                    <li>Metales pesados (gracias al medio KDF-55)</li>
+                    <li>Malos olores, sabores desagradables y sedimentos</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>¿Cuáles son las etapas de filtración del Bodyguard?</summary>
+            <div class="faq-body">
+                <p>El sistema utiliza un proceso de filtración de última generación que incluye las siguientes etapas:</p>
+                <ul>
+                    <li><strong>Etapa 1 — Filtro Magna de 5 micras:</strong> un prefiltro plisado de poliéster que retiene partículas pequeñas y cuenta con un diseño de doble junta tórica (O-ring) para evitar que el agua contaminada lo esquive.</li>
+                    <li><strong>Etapa 2 — Cama de medios combinados:</strong> mezcla de grava de cuarzo lavado, medio Redox KDF-55 (elimina cloro y previene el crecimiento bacteriano), carbón activado granular (GAC) de concha de coco y carbón catalítico (altamente efectivo contra cloraminas).</li>
+                    <li><strong>Etapa 3 — Opcional, Sistema Ultravioleta:</strong> se puede integrar un sistema UV Pulsar de 20 GPM para eliminar el 99.99% de patógenos como bacterias, virus y protozoos.</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>¿Este filtro afectará la presión de agua de mi hogar?</summary>
+            <div class="faq-body">
+                <p><strong>No.</strong> El sistema está diseñado con componentes internos con puertos de 1 pulgada o más, que reducen la fricción y la turbulencia. Soporta flujos máximos de hasta 25 GPM sin que se perciba pérdida de presión en el hogar.</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- GRUPO 2: Modelos -->
+    <div class="faq-group">
+        <div class="faq-group-title">📐 Modelos y Especificaciones</div>
+
+        <details class="faq-item">
+            <summary>¿Qué modelo debo elegir según el tamaño de mi casa?</summary>
+            <div class="faq-body">
+                <p>La elección del sistema depende del flujo máximo de agua y de la cantidad de baños que tenga tu hogar:</p>
+
+                <div class="modelos-grid" style="margin-top:14px;">
+                    <div class="modelo-card">
+                        <div class="gpm">10 <span>GPM</span></div>
+                        <h4>117-BGS-10</h4>
+                        <p>Ideal para casas de 1 a 3 baños</p>
+                    </div>
+                    <div class="modelo-card featured">
+                        <div class="gpm">15 <span>GPM</span></div>
+                        <h4>117-BGS-15</h4>
+                        <p>Diseñado para hogares de 3 a 6 baños</p>
+                    </div>
+                    <div class="modelo-card">
+                        <div class="gpm">20 <span>GPM</span></div>
+                        <h4>117-BGS-20</h4>
+                        <p>Recomendado para residencias de 6 o más baños</p>
+                    </div>
+                </div>
+            </div>
+        </details>
+    </div>
+
+    <!-- GRUPO 3: Mantenimiento -->
+    <div class="faq-group">
+        <div class="faq-group-title">🔧 Mantenimiento y Costos</div>
+
+        <details class="faq-item">
+            <summary>¿Qué mantenimiento requiere el sistema y con qué frecuencia?</summary>
+            <div class="faq-body">
+                <ul>
+                    <li><strong>Prefiltro de sedimentos (Magna de 5 micras):</strong> se debe reemplazar cada 6 a 12 meses para mantener el rendimiento óptimo del sistema. El costo individual es de $54.95 (con opción a un 10% de descuento en el programa de auto-envío).</li>
+                    <li><strong>Medios filtrantes de carbón (en el tanque):</strong> se debe cambiar el lecho de carbón (re-bed) cada 5 a 7 años para garantizar que continúe la remoción de químicos.</li>
+                </ul>
+            </div>
+        </details>
+    </div>
+
+    <!-- GRUPO 4: Compatibilidad e instalación -->
+    <div class="faq-group">
+        <div class="faq-group-title">🏠 Compatibilidad e Instalación</div>
+
+        <details class="faq-item">
+            <summary>¿Es adecuado este sistema si mi agua proviene de un pozo privado?</summary>
+            <div class="faq-body">
+                <p>Si utilizas agua de pozo, recomendamos realizar primero un <strong>análisis de agua en laboratorio</strong> antes de comprar el equipo. El agua de pozo contiene cientos de variables y contaminantes que difieren de la predictibilidad del agua de ciudad.</p>
+                <p>Ofrecemos un kit de prueba de laboratorio cuyo costo puede ser reembolsado al comprar el equipo recomendado.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>¿Dónde se fabrican los componentes del sistema?</summary>
+            <div class="faq-body">
+                <p>US Water Systems destaca el uso de componentes y ensamblaje de origen estadounidense:</p>
+                <ul>
+                    <li><strong>Filtros, carcasas y elementos filtrantes:</strong> fabricados en California</li>
+                    <li><strong>Soportes y tanques de fibra de vidrio:</strong> fabricados en Ohio</li>
+                    <li><strong>Medio de proceso KDF-55:</strong> formulado en Michigan</li>
+                    <li><strong>Ensamblaje final y control de calidad:</strong> realizado en Indianápolis, Indiana</li>
+                </ul>
+            </div>
+        </details>
+    </div>
+
+    <!-- GRUPO 5: Garantía -->
+    <div class="faq-group">
+        <div class="faq-group-title">🛡️ Garantía</div>
+
+        <details class="faq-item" open>
+            <summary>¿Qué tipo de garantía ofrece Water Guru Puerto Rico?</summary>
+            <div class="faq-body">
+                <p>Como contratista, <strong>Water Guru Puerto Rico</strong> garantiza tu sistema Bodyguard por <strong>3 años en cualquier pieza defectuosa</strong>. Si algún componente falla por defecto de fabricación dentro de ese periodo, lo reemplazamos sin costo adicional.</p>
+                <p>Además, el <strong>tanque de resina tiene garantía de por vida</strong>, respaldado directamente por el fabricante.</p>
+
+                <div class="warranty-grid">
+                    <div class="warranty-card">
+                        <div class="num">3 Años</div>
+                        <p>Garantía Water Guru PR en piezas defectuosas</p>
+                    </div>
+                    <div class="warranty-card">
+                        <div class="num">De Por Vida</div>
+                        <p>Garantía del tanque de resina</p>
+                    </div>
+                </div>
+            </div>
+        </details>
+    </div>
+
+</section>
+
+<!-- ===== CALCULATOR CTA ===== -->
+<section>
+    <div class="calc-cta">
+        <h2>💳 ¿Cuánto Pagarías Al Mes?</h2>
+        <p>Usa nuestra calculadora de pagos para ver en segundos cuánto sería tu pago mensual según el equipo, tu pronto pago, los meses y el APR estimado.</p>
+        <a class="btn-white" href="https://www.osmosispr.com/pagos" target="_blank">Ir a la Calculadora de Pagos →</a>
+    </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final-cta">
+    <h2>¿Tienes Más Preguntas?</h2>
+    <p>Escríbenos por WhatsApp o llámanos. Te ayudamos a elegir el sistema correcto para tu hogar en Puerto Rico, sin compromiso.</p>
+    <div class="buttons">
+        <a class="btn btn-primary" href="https://wa.me/17879729553?text=Hola%20Water%20Guru!%20Tengo%20preguntas%20sobre%20el%20filtro%20Bodyguard%20para%20toda%20la%20casa." target="_blank">💬 WhatsApp Mensaje Rápido</a>
+        <a class="btn btn-outline" href="tel:+17879729553">📞 Llama 787-972-9553</a>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="flogo">💧 Water Guru PR</div>
+    <p>Filtro de Agua Para Toda La Casa Bodyguard · Puerto Rico</p>
+    <p>© Water Guru PR · Todos los derechos reservados · <a href="tel:+17879729553">787-972-9553</a> · <a href="https://wa.me/17879729553" target="_blank">WhatsApp</a></p>
+    <p><a href="https://www.osmosispr.com" target="_blank">www.osmosispr.com</a> · <a href="https://www.osmosispr.com/pagos" target="_blank">Calculadora de Pagos</a></p>
+</footer>
+
+</body>
+</html>
