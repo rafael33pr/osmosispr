@@ -9,7 +9,7 @@
 <meta name="author" content="Water Guru PR — Rafael Santiago">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="product">
-<meta property="og:title" content="Apex Ósmosis Inversa — Instalación Incluida $1,195 Todo Incluido">
+<meta property="og:title" content="Sistema Ósmosis Inversa — Instalación Incluida $1,195 Todo Incluido">
 <meta property="og:description" content="Sistema completo + instalación profesional + garantía 3 años. Un solo precio, cero sorpresas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
@@ -470,6 +470,161 @@ footer strong{color:#fff}
     </div>
   </div>
 </section>
+   <!-- ═══════════════════════════════════════════════════
+     GALERÍA APEX — Pega esto justo DESPUÉS del </section>
+     que cierra la sección de las 5 etapas (#stages)
+════════════════════════════════════════════════════ -->
+
+<!-- CSS — Pega esto dentro de tu <style> antes del </style> -->
+<!--
+#gallery{background:var(--slate);padding:70px 0 55px}
+#gallery .sec-title{color:#fff}
+#gallery .sec-sub{color:rgba(255,255,255,.6)}
+.gal-wrap{position:relative;max-width:1100px;margin:0 auto;padding:0 52px}
+.gal-scroll{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:8px 4px 18px}
+.gal-scroll::-webkit-scrollbar{display:none}
+.gal-img{flex-shrink:0;width:calc((100% - 28px)/3);scroll-snap-align:start;border-radius:14px;overflow:hidden;position:relative;background:var(--slate-mid);box-shadow:0 8px 28px rgba(0,0,0,.35)}
+.gal-img img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform .45s ease}
+.gal-img:hover img{transform:scale(1.07)}
+.gal-placeholder{width:100%;aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;color:rgba(255,255,255,.25);font-size:.78rem;gap:8px;text-align:center;padding:16px;border:1px dashed rgba(16,185,129,.2)}
+.gal-placeholder .gp-icon{font-size:2rem}
+.gal-arrow{position:absolute;top:44%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;background:rgba(16,185,129,.2);border:1px solid rgba(16,185,129,.35);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:var(--em);transition:all .3s;z-index:3}
+.gal-arrow:hover{background:var(--em);color:var(--slate)}
+.gal-prev{left:0}.gal-next{right:0}
+.gal-dots{display:flex;gap:7px;justify-content:center;margin-top:14px;flex-wrap:wrap;padding:0 20px}
+.gdot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.2);border:none;cursor:pointer;transition:all .3s;padding:0}
+.gdot.active{background:var(--em);width:22px;border-radius:4px}
+.gal-cta{text-align:center;margin-top:32px}
+.gal-cta-text{color:rgba(255,255,255,.55);font-size:.88rem;margin-bottom:14px}
+@media(max-width:768px){
+  .gal-wrap{padding:0 14px}
+  .gal-img{width:calc((100% - 14px)/2)}
+  .gal-arrow{display:none}
+}
+@media(max-width:480px){.gal-img{width:84%}}
+-->
+
+<!-- ════ HTML — Pega aquí después del </section> de las 5 etapas ════ -->
+<section id="gallery" aria-labelledby="gal-title">
+  <div style="text-align:center;padding:0 20px">
+    <span class="sec-badge" style="display:block;width:fit-content;margin:0 auto 12px;background:var(--em)">📸 El Equipo en Acción</span>
+    <h2 class="sec-title" id="gal-title">Conoce el Sistema Apex</h2>
+    <p class="sec-sub">Un equipo de calidad premium, fabricado en EE.UU., instalado profesionalmente en tu hogar.</p>
+  </div>
+  <div class="gal-wrap">
+    <button class="gal-arrow gal-prev" id="galPrev" aria-label="Foto anterior">‹</button>
+    <div class="gal-scroll" id="galScroll">
+
+      <!-- FOTO 1: Imagen oficial del Apex MR-5050 desde el sitio del fabricante -->
+      <div class="gal-img">
+        <img
+          src="https://apexwaterfilters.com/pub/media/catalog/product/cache/6cc33e194160757b5a80d67e23d8ed9c/c/o/cover_photo_2_11.jpg"
+          alt="Sistema Apex MR-5050 Ósmosis Inversa 5 Etapas — Purificador de agua Puerto Rico"
+          loading="lazy">
+      </div>
+
+      <!-- FOTO 2: Sistema Apex — diagrama de etapas -->
+      <div class="gal-img">
+        <img
+          src="https://apexwaterfilters.com/pub/media/catalog/product/cache/6cc33e194160757b5a80d67e23d8ed9c/f/i/figure1.0_6.jpg"
+          alt="Diagrama 5 etapas filtración Apex RO — Cómo funciona el sistema de ósmosis inversa"
+          loading="lazy"
+          onerror="this.parentElement.innerHTML='<div class=\'gal-placeholder\'><div class=\'gp-icon\'>📷</div><span>apex-galeria-02.jpg<br>Sube esta foto a GitHub</span></div>'">
+      </div>
+
+      <!-- FOTOS 3-8: Sube TUS fotos instaladas a GitHub con estos nombres -->
+      <!-- Una vez subidas, cambia el placeholder por:
+           <img src="https://github.com/rafael33pr/osmosispr/blob/main/apex-galeria-03.jpg?raw=true"
+                alt="Sistema Apex instalado bajo el fregadero Puerto Rico"> -->
+
+      <div class="gal-img">
+        <div class="gal-placeholder">
+          <div class="gp-icon">📷</div>
+          <span><strong>apex-galeria-03.jpg</strong><br>Foto del sistema instalado</span>
+        </div>
+      </div>
+
+      <div class="gal-img">
+        <div class="gal-placeholder">
+          <div class="gp-icon">📷</div>
+          <span><strong>apex-galeria-04.jpg</strong><br>Foto del grifo de lujo</span>
+        </div>
+      </div>
+
+      <div class="gal-img">
+        <div class="gal-placeholder">
+          <div class="gp-icon">📷</div>
+          <span><strong>apex-galeria-05.jpg</strong><br>Foto del tanque instalado</span>
+        </div>
+      </div>
+
+      <div class="gal-img">
+        <div class="gal-placeholder">
+          <div class="gp-icon">📷</div>
+          <span><strong>apex-galeria-06.jpg</strong><br>Foto de filtros / etapas</span>
+        </div>
+      </div>
+
+      <div class="gal-img">
+        <div class="gal-placeholder">
+          <div class="gp-icon">📷</div>
+          <span><strong>apex-galeria-07.jpg</strong><br>Foto cliente satisfecho</span>
+        </div>
+      </div>
+
+      <div class="gal-img">
+        <div class="gal-placeholder">
+          <div class="gp-icon">📷</div>
+          <span><strong>apex-galeria-08.jpg</strong><br>Foto cocina con sistema</span>
+        </div>
+      </div>
+
+    </div>
+    <button class="gal-arrow gal-next" id="galNext" aria-label="Siguiente foto">›</button>
+  </div>
+  <div class="gal-dots" id="galDots"></div>
+  <div class="gal-cta">
+    <p class="gal-cta-text">¿Te gustó lo que ves? Tu cocina puede lucir igual de bien.</p>
+    <a href="https://wa.me/17879729553?text=Hola!%20Vi%20las%20fotos%20del%20sistema%20Apex%20y%20me%20interesa.%20¿Podemos%20agendar%20la%20instalación?"
+       class="btn-amber" target="_blank" rel="noopener">
+      💬 Quiero el Mío — Escribir por WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- ════ JS — Pega esto dentro de tu <script> antes del </script> ════ -->
+<!--
+(function(){
+  const scroll=document.getElementById('galScroll');
+  const items=scroll.querySelectorAll('.gal-img');
+  const dotsEl=document.getElementById('galDots');
+  const total=items.length;
+  let autoT;
+  items.forEach((_,i)=>{
+    const d=document.createElement('button');
+    d.className='gdot'+(i===0?' active':'');
+    d.setAttribute('aria-label','Foto '+(i+1));
+    d.addEventListener('click',()=>goTo(i));
+    dotsEl.appendChild(d);
+  });
+  function iw(){return items[0].offsetWidth+14;}
+  function cur(){return Math.round(scroll.scrollLeft/iw());}
+  function goTo(n){
+    const idx=(n+total)%total;
+    scroll.scrollTo({left:idx*iw(),behavior:'smooth'});
+    sync(idx);reset();
+  }
+  function sync(idx){dotsEl.querySelectorAll('.gdot').forEach((d,i)=>d.classList.toggle('active',i===idx));}
+  function reset(){clearInterval(autoT);autoT=setInterval(()=>goTo(cur()+1),3800);}
+  document.getElementById('galPrev').addEventListener('click',()=>goTo(cur()-1));
+  document.getElementById('galNext').addEventListener('click',()=>goTo(cur()+1));
+  scroll.addEventListener('scroll',()=>sync(cur()),{passive:true});
+  let tx=0;
+  scroll.addEventListener('touchstart',e=>{tx=e.touches[0].clientX;},{passive:true});
+  scroll.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>40)goTo(dx<0?cur()+1:cur()-1);},{passive:true});
+  reset();
+})();
+-->
 
 <!-- ═══ CUSTOMIZATION ═════════════════════════════════ -->
 <section id="custom" aria-labelledby="cust-title">
