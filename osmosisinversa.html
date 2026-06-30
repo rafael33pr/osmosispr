@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ósmosis Inversa 101 | La Verdad Sobre el Agua en Puerto Rico</title>
+<meta name="description" content="Descubre por qué el agua de PRASA en Puerto Rico representa un riesgo real para tu salud y cómo la ósmosis inversa te protege. Información, datos y orientación gratuita.">
+<meta name="keywords" content="osmosis inversa Puerto Rico, agua PRASA contaminada, plomo agua Puerto Rico, cloro agua potable, purificador agua PR">
+<meta name="author" content="Water Guru PR — Rafael Santiago">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ósmosis Inversa 101 — La Verdad Sobre el Agua en Puerto Rico">
+<meta property="og:description" content="Datos reales sobre la calidad del agua en PR y cómo protegerte con ósmosis inversa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:      #0d4f4f;
+  --teal-mid:  #115e59;
+  --teal-lt:   #0f766e;
+  --aqua:      #2dd4bf;
+  --aqua-dk:   #14b8a6;
+  --coral:     #ff6b5b;
+  --coral-dk:  #e5503f;
+  --gold:      #fbbf24;
+  --light:     #f0fdfa;
+  --white:     #ffffff;
+  --dark:      #042f2e;
+  --text:      #1e2a2a;
+  --muted:     #5b6b6b;
+  --border:    #d9eeec;
+  --radius:    18px;
+  --shadow:    0 8px 32px rgba(13,79,79,.10);
+  --shadow-lg: 0 24px 64px rgba(13,79,79,.20);
+  --font:      'Poppins',sans-serif;
+  --display:   'Montserrat',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--text);background:var(--white);line-height:1.6;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+section{padding:84px 20px}
+.sec-badge{display:inline-block;background:var(--aqua-dk);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 16px;border-radius:50px;margin-bottom:14px}
+.sec-title{font-family:var(--display);font-size:clamp(1.8rem,4.2vw,2.7rem);font-weight:900;color:var(--teal);text-align:center;line-height:1.18;margin-bottom:16px}
+.sec-sub{text-align:center;color:var(--muted);font-size:1.02rem;max-width:640px;margin:0 auto 48px}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.on{opacity:1;transform:none}
+
+/* NAV */
+#nav{position:fixed;top:0;width:100%;z-index:1000;padding:16px 0;transition:all .3s}
+#nav.scrolled{background:rgba(13,79,79,.97);backdrop-filter:blur(12px);padding:10px 0;box-shadow:0 4px 24px rgba(0,0,0,.25)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;max-width:1020px;margin:0 auto;padding:0 20px}
+.logo{font-family:var(--display);font-weight:900;font-size:1.2rem;color:#fff;display:flex;flex-direction:column;line-height:1.1}
+.logo span{color:var(--aqua);font-size:.65rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase}
+.nav-links{display:flex;list-style:none;gap:24px;align-items:center}
+.nav-links a{color:rgba(255,255,255,.8);font-size:.85rem;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--aqua)}
+.nav-cta{background:var(--coral)!important;color:#fff!important;padding:9px 20px;border-radius:50px;font-weight:700!important;font-size:.84rem!important}
+.nav-cta:hover{background:var(--coral-dk)!important;transform:translateY(-2px)}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.hamburger span{width:24px;height:3px;background:#fff;border-radius:3px}
+
+/* HERO */
+#hero{min-height:96vh;background:linear-gradient(150deg,var(--teal) 0%,var(--teal-mid) 55%,#082f2a 100%);display:flex;align-items:center;padding:120px 20px 70px;position:relative;overflow:hidden}
+#hero::before{content:'';position:absolute;width:560px;height:560px;border-radius:50%;background:rgba(45,212,191,.1);top:-140px;right:-130px;pointer-events:none}
+#hero::after{content:'';position:absolute;width:380px;height:380px;border-radius:50%;background:rgba(255,107,91,.08);bottom:-100px;left:-90px;pointer-events:none}
+.hero-in{max-width:780px;margin:0 auto;text-align:center;position:relative;z-index:1}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,107,91,.16);border:1px solid rgba(255,107,91,.35);border-radius:50px;padding:7px 18px;font-size:.78rem;font-weight:700;color:#ff8a7d;margin-bottom:22px}
+.hero-title{font-family:var(--display);font-size:clamp(2.1rem,5.5vw,3.6rem);font-weight:900;color:#fff;line-height:1.12;margin-bottom:20px}
+.hero-title em{color:var(--aqua);font-style:normal}
+.hero-sub{color:rgba(255,255,255,.78);font-size:1.05rem;line-height:1.8;margin-bottom:34px;max-width:640px;margin-left:auto;margin-right:auto}
+.hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:40px}
+.btn-coral{background:linear-gradient(135deg,var(--coral),var(--coral-dk));color:#fff;padding:17px 32px;border-radius:50px;font-weight:800;font-size:.98rem;transition:all .3s;display:inline-flex;align-items:center;gap:10px;border:none;cursor:pointer;font-family:var(--font)}
+.btn-coral:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(255,107,91,.4)}
+.btn-outline{background:transparent;color:#fff;padding:17px 30px;border-radius:50px;font-weight:600;font-size:.96rem;border:2px solid rgba(255,255,255,.3);transition:all .3s;display:inline-flex;align-items:center;gap:10px}
+.btn-outline:hover{border-color:var(--aqua);background:rgba(45,212,191,.12);transform:translateY(-3px)}
+.hero-stats-row{display:flex;justify-content:center;gap:36px;flex-wrap:wrap}
+.hstat{text-align:center}
+.hstat strong{display:block;font-family:var(--display);font-size:1.9rem;font-weight:900;color:var(--coral)}
+.hstat span{font-size:.72rem;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:1px}
+
+/* PROBLEM STATS */
+#problem{background:var(--light)}
+.prob-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:920px;margin:0 auto 30px}
+.prob-card{background:#fff;border-radius:var(--radius);padding:32px 24px;text-align:center;box-shadow:var(--shadow);border-top:4px solid var(--coral)}
+.prob-num{font-family:var(--display);font-size:2.8rem;font-weight:900;color:var(--teal);line-height:1;margin-bottom:8px}
+.prob-label{font-size:.86rem;color:var(--muted);line-height:1.55}
+.prob-source{text-align:center;font-size:.78rem;color:var(--muted);max-width:680px;margin:0 auto;line-height:1.7}
+.prob-source strong{color:var(--teal)}
+
+/* LEAD & CHLORINE DANGERS */
+#dangers{background:#fff}
+.danger-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:980px;margin:0 auto}
+.danger-card{background:var(--light);border-radius:var(--radius);padding:32px 28px;border-left:6px solid var(--coral)}
+.danger-card.chlorine{border-left-color:var(--gold)}
+.danger-head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.danger-icon{font-size:2.4rem}
+.danger-head h3{font-family:var(--display);font-weight:900;font-size:1.3rem;color:var(--teal)}
+.danger-list{list-style:none;display:flex;flex-direction:column;gap:12px}
+.danger-list li{display:flex;gap:10px;font-size:.89rem;color:var(--text);line-height:1.6}
+.danger-list li::before{content:'⚠️';flex-shrink:0}
+.danger-list strong{color:var(--coral-dk)}
+.danger-card.chlorine .danger-list strong{color:#b45309}
+
+/* SOLUTION */
+#solution{background:linear-gradient(150deg,var(--teal) 0%,var(--teal-mid) 60%,#082f2a 100%);color:#fff}
+#solution .sec-title{color:#fff}
+#solution .sec-sub{color:rgba(255,255,255,.65)}
+.sol-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:920px;margin:0 auto 40px}
+.sol-card{background:rgba(255,255,255,.06);border:1px solid rgba(45,212,191,.2);border-radius:var(--radius);padding:26px 24px;transition:all .3s}
+.sol-card:hover{background:rgba(255,255,255,.1);transform:translateY(-5px)}
+.sol-icon{font-size:2.1rem;margin-bottom:10px}
+.sol-card h3{font-family:var(--display);font-weight:800;font-size:1rem;color:#fff;margin-bottom:8px}
+.sol-card p{font-size:.85rem;color:rgba(255,255,255,.62);line-height:1.65}
+.sol-removes{text-align:center;background:rgba(45,212,191,.1);border:1px solid rgba(45,212,191,.3);border-radius:16px;padding:24px;max-width:700px;margin:0 auto}
+.sol-removes-title{font-family:var(--display);font-weight:800;font-size:1rem;color:var(--aqua);margin-bottom:14px}
+.sol-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.sol-tag{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:6px 16px;font-size:.78rem;font-weight:600;color:#fff}
+
+/* CLOSING CTA */
+#closing{background:var(--light);text-align:center}
+.closing-inner{max-width:680px;margin:0 auto}
+.closing-icon{font-size:3rem;margin-bottom:18px}
+.closing-grid{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:36px}
+.ccard{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:26px 24px;min-width:185px;box-shadow:var(--shadow);transition:all .3s;display:block}
+.ccard:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:var(--aqua)}
+.ccard-icon{font-size:2.1rem;margin-bottom:9px}
+.ccard h3{font-size:.74rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:5px}
+.ccard p{font-weight:700;font-size:1rem;color:var(--teal)}
+.trust-row{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-top:40px;padding-top:32px;border-top:1px solid var(--border)}
+.trust-mini{display:flex;align-items:center;gap:8px;font-size:.84rem;color:var(--muted);font-weight:600}
+
+/* FOOTER */
+footer{background:var(--dark);color:rgba(255,255,255,.45);text-align:center;padding:28px 20px;font-size:.8rem}
+footer a{color:var(--aqua)}
+footer strong{color:#fff}
+
+/* WHATSAPP FLOAT */
+.wa-btn{position:fixed;bottom:26px;right:26px;width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(37,211,102,.5);z-index:9999;transition:all .3s}
+.wa-btn:hover{transform:scale(1.12) translateY(-3px);box-shadow:0 14px 34px rgba(37,211,102,.6)}
+.wa-btn svg{width:32px;height:32px;fill:#fff}
+.wa-ring{position:absolute;width:60px;height:60px;border-radius:50%;background:rgba(37,211,102,.4);animation:ring 2.2s ease-out infinite}
+@keyframes ring{0%{transform:scale(1);opacity:.9}100%{transform:scale(1.85);opacity:0}}
+
+/* MOBILE */
+@media(max-width:768px){
+  section{padding:60px 16px}
+  .hamburger{display:flex}
+  .nav-links{display:none;position:absolute;top:100%;left:0;width:100%;background:rgba(13,79,79,.98);flex-direction:column;padding:18px;gap:14px;border-top:1px solid rgba(255,255,255,.1)}
+  .nav-links.open{display:flex}
+  #nav{position:fixed}
+  .prob-grid{grid-template-columns:1fr}
+  .danger-grid{grid-template-columns:1fr}
+  .sol-grid{grid-template-columns:1fr}
+  .hero-stats-row{gap:20px}
+  #hero::before,#hero::after{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Navegación principal">
+  <div class="nav-in">
+    <a href="#hero" class="logo">💧 Ósmosis Inversa 101<span>by Water Guru PR</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#problem">El Problema</a></li>
+      <li><a href="#dangers">Riesgos</a></li>
+      <li><a href="#solution">La Solución</a></li>
+      <li><a href="#closing" class="nav-cta">💬 Contáctanos</a></li>
+    </ul>
+    <button class="hamburger" id="hbg" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="hero" role="banner">
+  <div class="hero-in">
+    <div class="hero-eyebrow">⚠️ Lo que nadie te ha dicho sobre tu agua</div>
+    <h1 class="hero-title">El Agua de Tu Grifo<br><em>No Es Tan Segura</em><br>Como Crees</h1>
+    <p class="hero-sub">Puerto Rico tiene el peor récord de cumplimiento de agua potable de todo Estados Unidos. Aquí te explicamos por qué — y cómo la ósmosis inversa te protege a ti y a tu familia, sin tecnicismos, con datos reales.</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/17879729553?text=Hola!%20Quiero%20más%20información%20sobre%20ósmosis%20inversa%20para%20mi%20hogar." class="btn-coral" target="_blank" rel="noopener">💬 Hablar por WhatsApp</a>
+      <a href="tel:+17879729553" class="btn-outline">📞 787-972-9553</a>
+    </div>
+    <div class="hero-stats-row">
+      <div class="hstat"><strong>99.5%</strong><span>Población con<br>violaciones de agua</span></div>
+      <div class="hstat"><strong>64%</strong><span>Muestras con<br>plomo detectado</span></div>
+      <div class="hstat"><strong>97%</strong><span>Con fallas en<br>pruebas de plomo</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- PROBLEM -->
+<section id="problem" aria-labelledby="prob-title">
+  <div class="wrap">
+    <span class="sec-badge" style="display:block;width:fit-content;margin:0 auto 14px;background:var(--coral)">La Realidad en Números</span>
+    <h2 class="sec-title" id="prob-title">Puerto Rico Tiene el Peor Récord de Agua del País</h2>
+    <p class="sec-sub">No es opinión — son datos oficiales de la EPA, USGS y organizaciones independientes. La crisis del agua en la isla es real, documentada y continúa hoy.</p>
+    <div class="prob-grid reveal">
+      <div class="prob-card">
+        <div class="prob-num">99.5%</div>
+        <div class="prob-label">de la población de Puerto Rico fue servida por sistemas de agua que violaron el Safe Drinking Water Act, según datos reportados a la EPA.</div>
+      </div>
+      <div class="prob-card">
+        <div class="prob-num">64%</div>
+        <div class="prob-label">de las muestras analizadas por el USGS en un estudio reciente detectaron presencia de plomo en el agua potable de la isla.</div>
+      </div>
+      <div class="prob-card">
+        <div class="prob-num">97%</div>
+        <div class="prob-label">de los puertorriqueños reciben agua de sistemas con violaciones en las pruebas requeridas de plomo y cobre — muchos sin saberlo.</div>
+      </div>
+    </div>
+    <p class="prob-source reveal">Fuentes: <strong>EPA</strong> (Agencia de Protección Ambiental), <strong>USGS</strong> (Servicio Geológico de EE.UU.) y <strong>NRDC</strong> (Natural Resources Defense Council), reporte "Threats on Tap: Drinking Water Violations in Puerto Rico".</p>
+  </div>
+</section>
+
+<!-- DANGERS: LEAD & CHLORINE -->
+<section id="dangers" aria-labelledby="dang-title">
+  <div class="wrap">
+    <span class="sec-badge" style="display:block;width:fit-content;margin:0 auto 14px">Riesgos a Largo Plazo</span>
+    <h2 class="sec-title" id="dang-title">Plomo y Cloro: Lo que la Exposición Prolongada Causa</h2>
+    <p class="sec-sub">Estos no son riesgos hipotéticos. Son efectos documentados por organizaciones de salud pública sobre la exposición continua a estos contaminantes en el agua.</p>
+    <div class="danger-grid reveal">
+      <div class="danger-card">
+        <div class="danger-head"><span class="danger-icon">🦴</span><h3>El Plomo</h3></div>
+        <ul class="danger-list">
+          <li><strong>Daño cerebral irreversible</strong> en niños — afecta el desarrollo neurológico de forma permanente, incluso a niveles bajos de exposición.</li>
+          <li><strong>Problemas cardiovasculares y renales</strong> en adultos con exposición prolongada, incluyendo presión arterial elevada.</li>
+          <li><strong>Complicaciones en el embarazo</strong> — vinculado a abortos espontáneos, partos prematuros y bajo peso al nacer.</li>
+          <li><strong>Disfunción cognitiva</strong> en adultos, incluyendo dificultades de memoria y concentración con exposición crónica.</li>
+        </ul>
+      </div>
+      <div class="danger-card chlorine">
+        <div class="danger-head"><span class="danger-icon">🧪</span><h3>El Cloro y Subproductos</h3></div>
+        <ul class="danger-list">
+          <li><strong>Subproductos de desinfección (THMs)</strong> — se forman cuando el cloro reacciona con materia orgánica en el agua, vinculados a riesgos a largo plazo.</li>
+          <li><strong>Irritación respiratoria y de piel</strong> con exposición prolongada, especialmente al ducharse con agua clorada caliente.</li>
+          <li><strong>Alteración de la flora intestinal</strong> — el cloro diseñado para matar bacterias también puede afectar bacterias beneficiosas del cuerpo.</li>
+          <li><strong>Sabor y olor desagradables</strong> que muchas familias enmascaran comprando agua embotellada — sin resolver el problema de fondo.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section id="solution" aria-labelledby="sol-title">
+  <div class="wrap">
+    <span class="sec-badge" style="display:block;width:fit-content;margin:0 auto 14px;background:var(--aqua-dk)">La Solución Comprobada</span>
+    <h2 class="sec-title" id="sol-title">Por Qué la Ósmosis Inversa Es la Respuesta</h2>
+    <p class="sec-sub">No es una moda — es la tecnología de filtración de agua más efectiva y estudiada que existe para uso residencial.</p>
+    <div class="sol-grid reveal">
+      <div class="sol-card">
+        <div class="sol-icon">🔬</div>
+        <h3>Filtración a Nivel Molecular</h3>
+        <p>La membrana de ósmosis inversa filtra partículas tan pequeñas como 0.0001 micrones — mucho más fino que cualquier filtro de carbón tradicional.</p>
+      </div>
+      <div class="sol-card">
+        <div class="sol-icon">🛡️</div>
+        <h3>Elimina lo que el Sistema Municipal No Puede</h3>
+        <p>Plomo, arsénico, cloro, subproductos de desinfección, bacterias y más — contaminantes que pasan a través del tratamiento estándar de PRASA.</p>
+      </div>
+      <div class="sol-card">
+        <div class="sol-icon">💰</div>
+        <h3>Más Económico que las Botellas</h3>
+        <p>Una familia promedio gasta $80+ al mes en agua embotellada. Un sistema instalado se paga solo en cuestión de meses.</p>
+      </div>
+      <div class="sol-card">
+        <div class="sol-icon">🇺🇸</div>
+        <h3>Tecnología Certificada</h3>
+        <p>Los sistemas con certificación NSF/ANSI están verificados independientemente para garantizar que realmente eliminan lo que prometen.</p>
+      </div>
+    </div>
+    <div class="sol-removes reveal">
+      <div class="sol-removes-title">✅ La Ósmosis Inversa Elimina:</div>
+      <div class="sol-tags">
+        <span class="sol-tag">Plomo</span>
+        <span class="sol-tag">Arsénico</span>
+        <span class="sol-tag">Cloro</span>
+        <span class="sol-tag">Cloraminas</span>
+        <span class="sol-tag">PFAS</span>
+        <span class="sol-tag">Mercurio</span>
+        <span class="sol-tag">Nitratos</span>
+        <span class="sol-tag">Bacterias</span>
+        <span class="sol-tag">Virus</span>
+        <span class="sol-tag">Pesticidas</span>
+        <span class="sol-tag">Sedimentos</span>
+        <span class="sol-tag">Sabores y olores</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section id="closing" aria-labelledby="close-title">
+  <div class="closing-inner reveal">
+    <div class="closing-icon">💧</div>
+    <span class="sec-badge" style="background:var(--coral)">Da el Primer Paso</span>
+    <h2 class="sec-title" id="close-title">Protege a Tu Familia Hoy, No Mañana</h2>
+    <p class="sec-sub" style="margin-bottom:0">No esperes a que la próxima noticia sobre el agua en PR te tome por sorpresa. Conversemos sobre qué sistema es el adecuado para tu hogar — sin compromiso, sin presión, solo información clara.</p>
+    <div class="closing-grid">
+      <a href="https://wa.me/17879729553?text=Hola!%20Vi%20la%20página%20de%20Ósmosis%20Inversa%20101%20y%20quiero%20más%20información." class="ccard" target="_blank" rel="noopener">
+        <div class="ccard-icon">💬</div><h3>WhatsApp</h3><p>787-972-9553</p>
+      </a>
+      <a href="tel:+17879729553" class="ccard">
+        <div class="ccard-icon">📞</div><h3>Llama Ahora</h3><p>787-972-9553</p>
+      </a>
+      <a href="https://wa.me/17879729553?text=Hola!%20Quiero%20agendar%20una%20consulta%20gratuita%20sobre%20ósmosis%20inversa." class="ccard" target="_blank" rel="noopener">
+        <div class="ccard-icon">📋</div><h3>Consulta Gratis</h3><p>Agenda Hoy</p>
+      </a>
+    </div>
+    <div class="trust-row">
+      <div class="trust-mini">🇵🇷 Servicio en toda PR</div>
+      <div class="trust-mini">🔧 Instalación profesional</div>
+      <div class="trust-mini">⭐ 5.0 en Google</div>
+      <div class="trust-mini">🛡️ Garantía incluida</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© <span id="yr"></span> <strong>Ósmosis Inversa 101</strong> · Un proyecto educativo de <strong>Water Guru PR</strong> ·
+  <a href="tel:+17879729553">787-972-9553</a> ·
+  <a href="https://wa.me/17879729553" target="_blank" rel="noopener">WhatsApp</a></p>
+  <p style="margin-top:7px;font-size:.74rem">Información educativa sobre calidad de agua y ósmosis inversa en Puerto Rico · Rafael Santiago</p>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/17879729553?text=Hola!%20Vi%20la%20página%20de%20Ósmosis%20Inversa%20101%20y%20tengo%20una%20pregunta."
+   class="wa-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+  <div class="wa-ring"></div>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 50), {passive:true});
+const hbg = document.getElementById('hbg');
+const nLinks = document.getElementById('navLinks');
+hbg.addEventListener('click', () => {
+  const open = nLinks.classList.toggle('open');
+  hbg.setAttribute('aria-expanded', open);
+});
+nLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  nLinks.classList.remove('open');
+  hbg.setAttribute('aria-expanded', false);
+}));
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('on'); obs.unobserve(e.target); }});
+}, {threshold:.1, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
