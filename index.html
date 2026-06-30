@@ -330,6 +330,35 @@ footer strong{color:#fff}
   .calc-cards{grid-template-columns:1fr}
   .rev-card{min-width:240px;max-width:240px}
 }
+  style>
+/* ── BUY v2 — estilo tarjeta oscura tipo Apex ─────────── */
+#buy{background:var(--light)}
+.buy-card-dark{max-width:900px;margin:0 auto;background:var(--navy);border-radius:24px;box-shadow:0 30px 80px rgba(10,35,66,.35);display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+.buy-img-dark{background:linear-gradient(145deg,var(--navy-mid),#062018);display:flex;align-items:center;justify-content:center;padding:40px;min-height:360px}
+.buy-img-dark img{max-width:280px;filter:drop-shadow(0 12px 30px rgba(0,0,0,.4));border-radius:12px}
+.buy-info-dark{padding:38px 34px;display:flex;flex-direction:column;justify-content:center}
+.urgency-pill-wg{background:var(--orange);color:#fff;font-size:.72rem;font-weight:700;padding:5px 14px;border-radius:20px;display:inline-block;margin-bottom:12px;letter-spacing:.3px;width:fit-content}
+.buy-name-dark{font-family:var(--display);font-size:1.55rem;font-weight:900;color:#fff;margin-bottom:6px}
+.buy-tag-dark{color:rgba(255,255,255,.5);font-size:.85rem;margin-bottom:18px}
+.buy-feats-dark{list-style:none;margin-bottom:22px}
+.buy-feats-dark li{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:.87rem;color:rgba(255,255,255,.82)}
+.buy-feats-dark li:last-child{border-bottom:none}
+.fi-dark{width:22px;height:22px;border-radius:50%;background:rgba(0,180,216,.2);color:var(--cyan);display:flex;align-items:center;justify-content:center;font-size:.7rem;flex-shrink:0;font-weight:700}
+.buy-price-dark{margin-bottom:20px}
+.buy-now-row-dark{display:flex;align-items:baseline;gap:12px}
+.buy-now-dark{font-family:var(--display);font-size:2.8rem;font-weight:900;color:#fff;line-height:1}
+.buy-now-dark sup{font-size:1.2rem}
+.buy-now-dark sub{font-size:1.1rem;color:rgba(255,255,255,.55);font-family:var(--font)}
+.buy-per-dark{font-size:.83rem;color:rgba(255,255,255,.5);margin-top:6px}
+.btn-buy-dark{background:linear-gradient(135deg,var(--orange),var(--orange-dk));color:#fff;padding:17px 28px;border-radius:50px;font-weight:800;font-size:.98rem;cursor:pointer;border:none;width:100%;text-align:center;transition:all .3s;font-family:var(--font);display:block}
+.btn-buy-dark:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(244,162,97,.4)}
+.pay-row-dark{display:flex;align-items:center;gap:8px;margin-top:14px;justify-content:center;flex-wrap:wrap}
+.pbadge-dark{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:4px 10px;font-size:.7rem;font-weight:600;color:rgba(255,255,255,.55)}
+@media(max-width:768px){
+  .buy-card-dark{grid-template-columns:1fr}
+  .buy-img-dark{min-height:200px;padding:28px}
+}
+</style>
 </style>
 </head>
 <body>
@@ -477,49 +506,54 @@ footer strong{color:#fff}
 </section>
 
 <!-- ═══ BUY ════════════════════════════════════════════════ -->
-<section id="buy" aria-labelledby="buy-title">
+section id="buy" aria-labelledby="buy-title">
   <div class="wrap">
-    <span class="sec-badge" style="display:block;width:fit-content;margin:0 auto 12px;background:var(--orange)">Compra Segura Online</span>
+    <span class="sec-badge" style="display:block;width:fit-content;margin:0 auto 12px;background:var(--orange)">🔥 Compra Segura Online</span>
     <h2 class="sec-title" id="buy-title">Obtén Tu Sistema Hoy</h2>
     <p class="sec-sub">Instalación completa incluida. No requiere electricidad. Poco mantenimiento.</p>
-    <div class="product-card reveal">
-      <div class="prod-img">
+
+    <div class="buy-card-dark reveal">
+      <div class="buy-img-dark">
         <img src="https://github.com/rafael33pr/osmosispr/blob/main/filtro-de-agua_osmosis.jpg?raw=true"
              alt="Purificador de Agua Ósmosis Inversa 5 Etapas Water Guru RO-WG50 — Puerto Rico"
-             width="290" height="260" loading="lazy">
+             loading="lazy">
       </div>
-      <div class="prod-info">
-        <span class="sec-badge" style="background:var(--orange)">⭐ Más Vendido</span>
-        <h3 class="prod-name">Sistema RO-WG50</h3>
-        <p class="prod-tag">Purificador Ósmosis Inversa · 5 Etapas · 50 GALONES POR DÍA</p>
-        <ul class="feat-list" aria-label="Incluye">
-          <li><span class="fi">✓</span> 5 etapas de filtración avanzada</li>
-          <li><span class="fi">✓</span> Instalación profesional completa</li>
-          <li><span class="fi">✓</span> No requiere electricidad</li>
-          <li><span class="fi">✓</span> Agua pura 24/7 en tu cocina</li>
-          <li><span class="fi">✓</span> Elimina 99% de contaminantes</li>
-          <li><span class="fi">✓</span> Poco mantenimiento (filtros anuales)</li>
-          <li><span class="fi">✓</span> Tanque de almacenamiento incluido</li>
+      <div class="buy-info-dark">
+        <span class="urgency-pill-wg">⭐ Más Vendido</span>
+        <h3 class="buy-name-dark">Sistema RO-WG50</h3>
+        <p class="buy-tag-dark">Purificador Ósmosis Inversa · 5 Etapas · 50 Galones Por Día</p>
+
+        <ul class="buy-feats-dark" aria-label="Incluye">
+          <li><span class="fi-dark">✓</span> 5 etapas de filtración avanzada</li>
+          <li><span class="fi-dark">✓</span> Instalación profesional completa</li>
+          <li><span class="fi-dark">✓</span> No requiere electricidad</li>
+          <li><span class="fi-dark">✓</span> Agua pura 24/7 en tu cocina</li>
+          <li><span class="fi-dark">✓</span> Elimina 99% de contaminantes</li>
+          <li><span class="fi-dark">✓</span> Poco mantenimiento (filtros anuales)</li>
+          <li><span class="fi-dark">✓</span> Tanque de almacenamiento incluido</li>
         </ul>
-        <div class="price-block">
-          <p class="price-from">Pagos desde</p>
-          <div class="price-big"><sup>$</sup>38<sub>/mes</sub></div>
-          <p class="price-per">con Kiwipay · o pago único disponible</p>
+
+        <div class="buy-price-dark">
+          <div class="buy-now-row-dark">
+            <div class="buy-now-dark"><sup>$</sup>38<sub>/mes</sub></div>
+          </div>
+          <p class="buy-per-dark">con Kiwipay · o pago único disponible</p>
         </div>
-        <a href="https://www.kiwipay.co" class="btn-buy" target="_blank" >
+
+        <a href="https://www.kiwipay.co" class="btn-buy-dark" target="_blank" rel="noopener">
           🛒 Comprar Ahora — Pago 100% Seguro
         </a>
-        <div class="pay-row" aria-label="Métodos de pago">
-          <span class="pbadge">💳 Athmovil Business</span>
-          <span class="pbadge">🩷 Kiwipay</span>
-          <span class="pbadge">🔒 SSL</span>
-          <span class="pbadge">✅ Seguro</span>
+
+        <div class="pay-row-dark" aria-label="Métodos de pago">
+          <span class="pbadge-dark">💳 Athmovil Business</span>
+          <span class="pbadge-dark">🩷 Synchrony</span>
+          <span class="pbadge-dark">🔒 SSL</span>
+          <span class="pbadge-dark">✅ Seguro</span>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 <!-- ═══════════════════════════════════════════════════════
      🏠 SECCIÓN: FILTRO WHOLE HOUSE — BODYGUARD
      ★ Para modificar: edita los textos directamente aquí
