@@ -1,0 +1,232 @@
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sistema de Ósmosis Inversa 5 Etapas | Water Guru PR</title>
+<meta name="description" content="El clásico que nunca falla. Cinco etapas que eliminan cloro, plomo, flúor, sedimentos y contaminantes disueltos, entregando agua limpia y de mejor sabor pa">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0a2342;--navy-mid:#1a3a6c;--cyan:#00b4d8;--cyan-dark:#0077b6;
+  --orange:#f4a261;--orange-dk:#e76f51;--green:#2ecc71;--wa:#25D366;
+  --light:#f0f9ff;--white:#fff;--dark:#07111f;--text:#2d3748;--muted:#718096;
+  --border:#e2e8f0;--radius:16px;--shadow:0 8px 32px rgba(0,0,0,.10);--shadow-lg:0 20px 60px rgba(0,0,0,.18);
+  --font:'Poppins',sans-serif;--display:'Montserrat',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--text);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.display{font-family:var(--display);font-weight:900;line-height:1.12;color:var(--navy)}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+.section{padding:80px 20px}
+
+/* NAV */
+#nav{position:fixed;top:0;width:100%;z-index:1000;padding:16px 0;background:rgba(10,35,66,.96);backdrop-filter:blur(8px);transition:all .3s}
+.nav-in{display:flex;align-items:center;justify-content:space-between;max-width:1100px;margin:0 auto;padding:0 20px}
+.logo{font-family:var(--display);font-weight:900;font-size:1.4rem;color:#fff;display:flex;align-items:center;gap:6px}
+.logo em{color:var(--cyan);font-style:normal}
+.nav-links{display:flex;list-style:none;gap:26px;align-items:center}
+.nav-links a{color:rgba(255,255,255,.82);font-size:.88rem;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--cyan)}
+.nav-btn{background:var(--orange)!important;color:#fff!important;padding:9px 22px;border-radius:50px;font-weight:700!important;transition:all .2s}
+.nav-btn:hover{background:var(--orange-dk)!important;transform:translateY(-2px)}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:6px}
+.hamburger span{width:26px;height:3px;background:#fff;border-radius:3px;transition:.3s}
+
+/* BUTTONS */
+.btn-a{background:var(--orange);color:#fff;padding:15px 30px;border-radius:50px;font-weight:700;font-size:.95rem;transition:all .3s;display:inline-block;border:none;cursor:pointer;font-family:var(--font)}
+.btn-a:hover{background:var(--orange-dk);transform:translateY(-3px);box-shadow:0 10px 28px rgba(244,162,97,.45)}
+.btn-b{background:transparent;color:#fff;padding:15px 30px;border-radius:50px;font-weight:600;font-size:.95rem;border:2px solid rgba(255,255,255,.45);transition:all .3s;display:inline-block}
+.btn-b:hover{border-color:var(--cyan);background:rgba(0,180,216,.12);transform:translateY(-3px)}
+.btn-wh{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--wa);color:#fff;padding:16px 30px;border-radius:50px;font-weight:800;font-size:.98rem;transition:all .3s;border:none;cursor:pointer;font-family:var(--font)}
+.btn-wh:hover{background:#1ebe5d;transform:translateY(-3px);box-shadow:0 12px 30px rgba(37,211,102,.4)}
+.btn-wh svg{width:22px;height:22px;fill:#fff;flex-shrink:0}
+.btn-fin{background:linear-gradient(135deg,var(--orange),var(--orange-dk));color:#fff;padding:16px 30px;border-radius:50px;font-weight:800;display:inline-block;transition:all .3s}
+.btn-fin:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(244,162,97,.4)}
+.btn-row{display:flex;gap:14px;flex-wrap:wrap}
+
+.badge{background:var(--orange);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:6px 16px;border-radius:50px;display:inline-block;margin-bottom:16px}
+.badge.soon{background:linear-gradient(135deg,var(--cyan),var(--cyan-dark))}
+
+/* PRODUCT HERO */
+.p-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 55%,var(--cyan-dark) 100%);color:#fff;padding:130px 20px 80px}
+.p-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;max-width:1100px;margin:0 auto}
+.p-hero h1{color:#fff;font-size:clamp(1.9rem,4.4vw,2.9rem);margin:6px 0 16px}
+.p-hero .sub{color:rgba(255,255,255,.9);font-size:1.1rem;margin-bottom:24px;max-width:46ch}
+.p-hero-img{border-radius:24px;box-shadow:var(--shadow-lg);width:100%;object-fit:cover;aspect-ratio:5/4;background:linear-gradient(135deg,var(--navy),var(--cyan-dark))}
+.price-box{display:flex;align-items:baseline;gap:12px;margin-bottom:22px;flex-wrap:wrap}
+.price-box .amt{font-family:var(--display);font-weight:900;font-size:2.1rem;color:#fff}
+.price-box .per{color:rgba(255,255,255,.75);font-size:.95rem}
+.hero-chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.hero-chips span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:50px;padding:8px 15px;font-size:.84rem;display:inline-flex;align-items:center;gap:7px;color:#fff}
+.hero-chips svg{width:15px;height:15px;fill:var(--cyan)}
+
+/* PLACEHOLDER (para productos sin foto todavía) */
+.ph{display:flex;align-items:center;justify-content:center;text-align:center;color:#cfe6f7;font-weight:700;
+  background:linear-gradient(135deg,var(--navy),var(--cyan-dark));border-radius:24px;aspect-ratio:5/4;padding:24px;font-size:1rem}
+.ph.small{aspect-ratio:4/3;font-size:.85rem;border-radius:14px}
+
+/* BENEFITS */
+.head{max-width:640px;margin:0 auto 44px;text-align:center}
+.head .eyebrow{color:var(--cyan-dark);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}
+.head h2{font-size:clamp(1.6rem,3.2vw,2.3rem);margin:12px 0 10px}
+.head p{color:var(--muted)}
+.b-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1000px;margin:0 auto}
+.b-card{background:var(--light);border:1px solid var(--border);border-radius:var(--radius);padding:30px 26px;text-align:center}
+.b-ic{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--cyan-dark));display:flex;align-items:center;justify-content:center;margin:0 auto 16px;box-shadow:0 6px 18px rgba(0,180,216,.4)}
+.b-ic svg{width:26px;height:26px;fill:#fff}
+.b-card h4{font-family:var(--display);color:var(--navy);font-size:1.12rem;margin-bottom:8px}
+.b-card p{color:var(--muted);font-size:.94rem}
+
+/* CONTAMINANTS */
+.contam{background:linear-gradient(160deg,#0d1b2a 0%,#0a2342 55%,#12304a 100%);color:#fff;padding:78px 20px}
+.contam .head h2{color:#fff}
+.contam .head .eyebrow{color:var(--cyan)}
+.contam .head p{color:rgba(255,255,255,.82)}
+.contam-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px 20px;max-width:1000px;margin:0 auto}
+.contam-item{display:flex;align-items:center;gap:11px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:12px;padding:12px 15px;font-size:.92rem;color:#fff}
+.contam-item .ck{width:22px;height:22px;flex:0 0 auto;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--cyan-dark));display:flex;align-items:center;justify-content:center}
+.contam-item .ck svg{width:13px;height:13px;fill:none;stroke:#fff;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}
+.contam-item .pct{margin-left:auto;font-size:.72rem;font-weight:800;color:#0a2342;background:var(--cyan);padding:3px 9px;border-radius:20px;white-space:nowrap}
+.contam-note{max-width:1000px;margin:26px auto 0;font-size:.82rem;color:rgba(255,255,255,.6);text-align:center;line-height:1.6}
+@media(max-width:900px){.contam-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.contam-grid{grid-template-columns:1fr}}
+
+/* SPECS + FAQ split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:44px;max-width:1000px;margin:0 auto;align-items:start}
+.specs{background:var(--light);border:1px solid var(--border);border-radius:var(--radius);padding:8px 26px}
+.spec-row{display:flex;justify-content:space-between;gap:16px;padding:15px 0;border-bottom:1px solid var(--border)}
+.spec-row:last-child{border-bottom:0}
+.spec-row .k{color:var(--muted);font-size:.92rem}
+.spec-row .v{color:var(--navy);font-weight:700;font-size:.92rem;text-align:right}
+.faq details{background:#fff;border:1px solid var(--border);border-radius:14px;padding:2px 20px;margin-bottom:12px}
+.faq summary{cursor:pointer;font-weight:700;color:var(--navy);padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--display);color:var(--cyan-dark);font-size:1.4rem;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq p{color:var(--muted);padding:0 0 16px;font-size:.95rem}
+.sub-head{font-family:var(--display);color:var(--navy);font-size:1.3rem;margin-bottom:18px}
+
+/* GALLERY */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1000px;margin:0 auto}
+.gal img,.gal .ph.small{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:var(--shadow)}
+
+/* FINAL CTA */
+.final{background:linear-gradient(135deg,var(--cyan-dark) 0%,var(--navy) 100%);color:#fff;text-align:center;padding:76px 20px}
+.final h2{color:#fff;font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:12px}
+.final p{color:rgba(255,255,255,.85);max-width:48ch;margin:0 auto 28px}
+
+/* SOON note */
+.soon-note{max-width:1000px;margin:0 auto 30px;background:#eaf7fd;border:1px solid #b8e3f5;border-radius:14px;padding:16px 20px;color:var(--cyan-dark);font-weight:600}
+
+/* CATALOG */
+.cat-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 60%,var(--cyan-dark) 100%);color:#fff;text-align:center;padding:130px 20px 70px}
+.cat-hero h1{color:#fff;font-size:clamp(2rem,4.6vw,3rem);margin-bottom:14px}
+.cat-hero p{color:rgba(255,255,255,.85);max-width:52ch;margin:0 auto}
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;max-width:1100px;margin:0 auto}
+.p-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.p-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.p-card-img{aspect-ratio:4/3;position:relative;overflow:hidden}
+.p-card-img img,.p-card-img .ph{width:100%;height:100%;object-fit:cover;aspect-ratio:auto;border-radius:0}
+.p-card-badge{position:absolute;top:12px;left:12px;z-index:2}
+.p-card-body{padding:22px;display:flex;flex-direction:column;flex:1}
+.p-card-body h3{font-size:1.16rem;color:var(--navy);margin-bottom:8px;line-height:1.25}
+.p-card-body .desc{color:var(--muted);font-size:.93rem;flex:1}
+.p-card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:18px}
+.p-card-foot .price{font-family:var(--display);font-weight:900;color:var(--cyan-dark);font-size:1rem}
+.p-card-foot .see{font-weight:700;color:var(--orange-dk);font-size:.9rem}
+
+/* FOOTER */
+footer{background:var(--dark);color:rgba(255,255,255,.7);padding:44px 20px;text-align:center;font-size:.9rem}
+footer .logo{justify-content:center;margin-bottom:12px}
+footer a{color:var(--cyan)}
+
+@media(max-width:900px){
+  .nav-links{display:none;position:absolute;top:100%;left:0;width:100%;background:rgba(10,35,66,.98);flex-direction:column;padding:18px;gap:14px;border-top:1px solid rgba(255,255,255,.1)}
+  .nav-links.open{display:flex}
+  .hamburger{display:flex}
+  .p-hero-grid,.split{grid-template-columns:1fr}
+  .b-grid,.gal,.cat-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .b-grid,.gal,.cat-grid{grid-template-columns:1fr}
+  .section{padding:56px 20px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style></head><body><nav id="nav"><div class="nav-in">
+  <a href="index.html" class="logo">💧 Water<em>Guru</em></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="productos.html">Productos</a></li>
+    <li><a href="index.html#pagocalc">Financiamiento</a></li>
+    <li><a href="index.html#reviews">Reseñas</a></li>
+    <li><a href="index.html#contact">Contacto</a></li>
+    <li><a href="https://wa.me/17879729553?text=Hola%20Water%20Guru%21%20Tengo%20una%20pregunta." class="nav-btn" target="_blank" rel="noopener">WhatsApp</a></li>
+  </ul>
+  <button class="hamburger" id="hbg" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+</div></nav>
+<header class="p-hero">
+  <div class="p-hero-grid">
+    <div>
+      <span class="badge ">⭐ Más popular</span>
+      <h1>Sistema de Ósmosis Inversa 5 Etapas</h1>
+      <p class="sub">El clásico que nunca falla. Cinco etapas que eliminan cloro, plomo, flúor, sedimentos y contaminantes disueltos, entregando agua limpia y de mejor sabor para beber y cocinar.</p>
+      <div class="price-box"><span class="amt">$39</span><span class="per">/mes con financiamiento · o pago único</span></div>
+      <div class="btn-row"><a href="https://www.synchrony.com/mmc/HQ233037200?sitecode=acewel401" class="btn-fin" target="_blank" rel="noopener">Financiar desde $39/mes</a><a href="https://wa.me/17879729553?text=Hola%20Water%20Guru%21%20Me%20interesa%20el%20Sistema%20de%20%C3%93smosis%20Inversa.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%20y%20cotizaci%C3%B3n%3F" class="btn-wh" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2s-.7.9-.9 1.1c-.2.2-.3.2-.6.1-1.4-.7-2.3-1.3-3.3-2.9-.2-.4.2-.4.6-1.2.1-.2 0-.4 0-.5s-.6-1.5-.9-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-1 .9-1.1 2.1-.7 3.3.6 1.7 1.8 3.1 3.4 4.2 2.2 1.5 3.6 1.6 4.5 1.4.5-.1 1.5-.6 1.7-1.3.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3z"/><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm0 18a8 8 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1112 20z"/></svg> Pedir cotización</a></div>
+      <div class="hero-chips"><span><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>5 etapas de filtración</span><span><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Tanque de almacenamiento</span><span><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Llave dedicada incluida</span><span><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Instalación profesional</span></div>
+    </div>
+    <div><img src="https://github.com/rafael33pr/osmosispr/blob/main/OSMOSIS_INVERSA_1.jpg?raw=true" class="p-hero-img" alt="Sistema de Ósmosis Inversa 5 Etapas" loading="eager"></div>
+  </div>
+</header>
+
+<section class="section">
+  
+  <div class="head"><span class="eyebrow">Por qué escogerlo</span><h2>Beneficios principales</h2></div>
+  <div class="b-grid"><div class="b-card"><div class="b-ic"><svg viewBox="0 0 24 24"><path d="M12 3s6 7 6 11a6 6 0 01-12 0c0-4 6-11 6-11z" fill="none" stroke="#fff" stroke-width="1.8"/></svg></div><h4>Agua de mejor sabor</h4><p>Elimina cloro y olores para que el agua sepa fresca y natural.</p></div><div class="b-card"><div class="b-ic"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4-3 7-7 8-4-1-7-4-7-8V6l7-3z" fill="none" stroke="#fff" stroke-width="1.8"/><path d="M9 12l2 2 4-4" fill="none" stroke="#fff" stroke-width="1.8"/></svg></div><h4>Hasta 5 barreras</h4><p>Cada etapa atrapa un contaminante distinto para máxima pureza.</p></div><div class="b-card"><div class="b-ic"><svg viewBox="0 0 24 24"><rect x="6" y="4" width="12" height="16" rx="3" fill="none" stroke="#fff" stroke-width="1.8"/><path d="M6 12h12" stroke="#fff" stroke-width="1.8"/></svg></div><h4>Siempre lista</h4><p>El tanque guarda agua purificada para tener presión al instante.</p></div></div>
+</section>
+
+<section class="contam">
+  <div class="head">
+    <span class="eyebrow">Protección comprobada</span>
+    <h2>Qué reduce este sistema</h2>
+    <p>Más de 24 contaminantes que este sistema ayuda a eliminar de tu agua.</p>
+  </div>
+  <div class="contam-grid"><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Plomo</span><span class="pct">hasta 99%</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Arsénico (As V)</span><span class="pct">94–99%</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Flúor</span><span class="pct">85–95%</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Nitratos</span><span class="pct">85–95%</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>PFAS (químicos eternos)</span><span class="pct">90–99%</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Sólidos disueltos (TDS)</span><span class="pct">95–99%</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Mercurio</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Cromo (incl. Cromo-6)</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Cadmio</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Cobre</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Bario</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Aluminio</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Antimonio</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Sodio</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Cloruro</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Sulfato</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Hierro</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Manganeso</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Selenio</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Radio y Uranio</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Cloro y cloramina</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Pesticidas y herbicidas</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Quistes (Giardia, Cryptosporidium)</span></div><div class="contam-item"><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><span>Microplásticos</span></div></div>
+  <p class="contam-note">Reducción típica de más de 20 contaminantes. Los porcentajes son valores comunes de la ósmosis inversa; los resultados reales dependen del agua de tu área. Para máxima confianza, busca membranas certificadas NSF/ANSI 58.</p>
+</section>
+
+<section class="section" style="background:var(--light)">
+  <div class="split">
+    <div>
+      <h3 class="sub-head">📋 Ficha técnica</h3>
+      <div class="specs"><div class="spec-row"><span class="k">Etapas de filtración</span><span class="v">5</span></div><div class="spec-row"><span class="k">Tipo</span><span class="v">Ósmosis inversa con tanque</span></div><div class="spec-row"><span class="k">Ubicación</span><span class="v">Bajo el fregadero</span></div><div class="spec-row"><span class="k">Incluye</span><span class="v">Llave dedicada + instalación</span></div><div class="spec-row"><span class="k">Mantenimiento</span><span class="v">Cambio de filtros periódico</span></div><div class="spec-row"><span class="k">Ideal para</span><span class="v">Agua de beber y cocinar</span></div></div>
+    </div>
+    <div>
+      <h3 class="sub-head">❓ Preguntas frecuentes</h3>
+      <div class="faq"><details><summary>¿Cada cuánto se cambian los filtros?</summary><p>Depende del uso y del agua de tu área. En la instalación te explico el calendario recomendado para tu caso.</p></details><details><summary>¿Ocupa mucho espacio?</summary><p>Se instala discretamente en el gabinete bajo el fregadero, junto con el tanque.</p></details><details><summary>¿Baja la presión del agua?</summary><p>No. El tanque mantiene agua ya purificada, así que tienes buen flujo cuando abres la llave.</p></details></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--light)">
+  <div class="head"><span class="eyebrow">Galería</span><h2>Míralo de cerca</h2></div>
+  <div class="gal"><img src="https://github.com/rafael33pr/osmosispr/blob/main/OSMOSIS_INVERSA_1.jpg?raw=true" alt="Sistema de Ósmosis Inversa 5 Etapas — foto 1" loading="lazy"><img src="https://github.com/rafael33pr/osmosispr/blob/main/OSMOSIS_INVERSA_2.jpg?raw=true" alt="Sistema de Ósmosis Inversa 5 Etapas — foto 2" loading="lazy"><img src="https://github.com/rafael33pr/osmosispr/blob/main/OSMOSIS_INVERSA_3.jpg?raw=true" alt="Sistema de Ósmosis Inversa 5 Etapas — foto 3" loading="lazy"><img src="https://github.com/rafael33pr/osmosispr/blob/main/Grifo_de_agua.jpg?raw=true" alt="Sistema de Ósmosis Inversa 5 Etapas — foto 4" loading="lazy"></div>
+</section>
+
+<section class="final">
+  <h2>¿Lo quieres en tu hogar?</h2>
+  <p>Escríbeme por WhatsApp con el nombre del sistema y coordinamos tu instalación.</p>
+  <a href="https://wa.me/17879729553?text=Hola%20Water%20Guru%21%20Quiero%20info%20del%20Sistema%20de%20%C3%93smosis%20Inversa." class="btn-wh" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2s-.7.9-.9 1.1c-.2.2-.3.2-.6.1-1.4-.7-2.3-1.3-3.3-2.9-.2-.4.2-.4.6-1.2.1-.2 0-.4 0-.5s-.6-1.5-.9-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-1 .9-1.1 2.1-.7 3.3.6 1.7 1.8 3.1 3.4 4.2 2.2 1.5 3.6 1.6 4.5 1.4.5-.1 1.5-.6 1.7-1.3.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3z"/><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm0 18a8 8 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1112 20z"/></svg> Escríbeme por WhatsApp</a>
+</section>
+
+<footer>
+  <div class="logo">💧 Water<em>Guru</em> PR</div>
+  <p>Sistemas de ósmosis inversa y filtración · Puerto Rico · Rafael Santiago</p>
+  <p style="margin-top:8px">📞 <a href="tel:+17879729553">787-972-9553</a> · <a href="https://wa.me/17879729553?text=Hola%20Water%20Guru%21" target="_blank" rel="noopener">WhatsApp</a> · <a href="productos.html">Ver productos</a></p>
+</footer>
+<script>
+var h=document.getElementById('hbg'),l=document.getElementById('navLinks');
+if(h)h.addEventListener('click',function(){l.classList.toggle('open')});
+</script>
+</body></html>
