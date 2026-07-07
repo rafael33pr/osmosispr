@@ -109,8 +109,15 @@ img{max-width:100%;display:block}
 .sub-head{font-family:var(--display);color:var(--navy);font-size:1.3rem;margin-bottom:18px}
 
 /* GALLERY */
-.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:1000px;margin:0 auto}
-.gal img,.gal .ph.small{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:var(--shadow)}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:1000px;margin:0 auto;align-items:start}
+.gal img{width:100%;height:auto;border-radius:14px;box-shadow:var(--shadow);cursor:zoom-in;transition:transform .15s}
+.gal img:hover{transform:scale(1.02)}
+.gal .ph.small{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:14px;box-shadow:var(--shadow)}
+/* LIGHTBOX (ver foto en grande) */
+.lightbox{position:fixed;inset:0;background:rgba(7,17,31,.93);display:none;align-items:center;justify-content:center;z-index:9999;padding:24px;cursor:zoom-out}
+.lightbox.open{display:flex}
+.lightbox img{max-width:95%;max-height:92%;border-radius:10px;box-shadow:0 24px 70px rgba(0,0,0,.55)}
+.lightbox .x{position:absolute;top:14px;right:26px;color:#fff;font-size:2.6rem;line-height:1;cursor:pointer}
 
 /* FINAL CTA */
 .final{background:linear-gradient(135deg,var(--cyan-dark) 0%,var(--navy) 100%);color:#fff;text-align:center;padding:76px 20px}
@@ -228,5 +235,17 @@ footer a{color:var(--cyan)}
 <script>
 var h=document.getElementById('hbg'),l=document.getElementById('navLinks');
 if(h)h.addEventListener('click',function(){l.classList.toggle('open')});
+</script>
+<div class="lightbox" id="lightbox"><span class="x">&times;</span><img id="lightbox-img" src="" alt="Foto ampliada"></div>
+<script>
+(function(){
+  var lb=document.getElementById('lightbox'), im=document.getElementById('lightbox-img');
+  if(!lb) return;
+  document.querySelectorAll('.gal img').forEach(function(g){
+    g.addEventListener('click',function(){ im.src=this.src; lb.classList.add('open'); });
+  });
+  lb.addEventListener('click',function(){ lb.classList.remove('open'); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') lb.classList.remove('open'); });
+})();
 </script>
 </body></html>
