@@ -104,6 +104,25 @@ section{padding:84px 20px}
 .danger-list strong{color:var(--coral-dk)}
 .danger-card.chlorine .danger-list strong{color:#b45309}
 
+/* ===== CARRUSEL DE FOTOS ===== */
+#gallery{background:var(--light)}
+.carousel{position:relative;max-width:820px;margin:0 auto;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);background:#dff5f2}
+.carousel-track{display:flex;transition:transform .45s cubic-bezier(.65,0,.35,1);touch-action:pan-y}
+.carousel-slide{flex:0 0 100%;position:relative;aspect-ratio:4/3;background:linear-gradient(135deg,#cdeeea,#e7f8f5)}
+.carousel-slide img{width:100%;height:100%;object-fit:cover;display:block}
+/* Placeholder visual mientras Rafael añade las fotos reales */
+.carousel-slide .ph-label{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--teal);font-family:var(--display);font-weight:800;text-align:center;padding:20px}
+.carousel-slide .ph-label span{font-size:.72rem;font-weight:600;color:var(--muted);text-transform:none;letter-spacing:0}
+.carousel-caption{position:absolute;left:0;right:0;bottom:0;padding:18px 20px 14px;background:linear-gradient(0deg,rgba(4,47,46,.78),rgba(4,47,46,0));color:#fff;font-size:.86rem;font-weight:600}
+.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.92);border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.18);z-index:2;transition:all .2s;color:var(--teal)}
+.carousel-arrow:hover{background:#fff;transform:translateY(-50%) scale(1.08)}
+.carousel-arrow.prev{left:14px}
+.carousel-arrow.next{right:14px}
+.carousel-arrow svg{width:20px;height:20px}
+.carousel-dots{display:flex;justify-content:center;gap:8px;margin-top:18px}
+.carousel-dot{width:9px;height:9px;border-radius:50%;background:#bfe4e0;border:none;cursor:pointer;padding:0;transition:all .25s}
+.carousel-dot.active{background:var(--coral);width:22px;border-radius:6px}
+
 /* SOLUTION */
 #solution{background:linear-gradient(150deg,var(--teal) 0%,var(--teal-mid) 60%,#082f2a 100%);color:#fff}
 #solution .sec-title{color:#fff}
@@ -156,6 +175,10 @@ footer strong{color:#fff}
   .sol-grid{grid-template-columns:1fr}
   .hero-stats-row{gap:20px}
   #hero::before,#hero::after{display:none}
+  .carousel-slide{aspect-ratio:1/1}
+  .carousel-arrow{width:36px;height:36px}
+  .carousel-arrow.prev{left:8px}
+  .carousel-arrow.next{right:8px}
 }
 </style>
 </head>
@@ -166,6 +189,7 @@ footer strong{color:#fff}
   <div class="nav-in">
     <a href="#hero" class="logo">💧 Ósmosis Inversa 101<span>by Water Guru PR</span></a>
     <ul class="nav-links" id="navLinks">
+      <li><a href="#gallery">Nuestro Trabajo</a></li>
       <li><a href="#problem">El Problema</a></li>
       <li><a href="#dangers">Riesgos</a></li>
       <li><a href="#solution">La Solución</a></li>
@@ -194,6 +218,68 @@ footer strong{color:#fff}
     </div>
   </div>
 </header>
+
+<!-- ===== GALERÍA / CARRUSEL DE FOTOS ===== -->
+<section id="gallery" aria-labelledby="gallery-title" style="padding-top:56px">
+  <div class="wrap">
+    <span class="sec-badge" style="display:block;width:fit-content;margin:0 auto 14px;background:var(--teal-lt)">Instalaciones Reales</span>
+    <h2 class="sec-title" id="gallery-title">Nuestro Trabajo en Puerto Rico</h2>
+    <p class="sec-sub">Sistemas instalados en hogares reales, listos para conectar y proteger tu agua.</p>
+
+    <div class="carousel reveal" id="carousel">
+      <div class="carousel-track" id="carouselTrack">
+
+        <!-- SLIDE 1 -->
+        <div class="carousel-slide">
+          <!-- Cuando tengas la foto, reemplaza este <div class="ph-label"> por:
+               <img src="RUTA-O-URL-DE-TU-FOTO-1.jpg" alt="Descripción de la foto 1" loading="lazy" width="800" height="600"> -->
+          <div class="ph-label">📷<span>Foto 1 — reemplaza este espacio</span></div>
+          <div class="carousel-caption">Instalación de sistema de ósmosis inversa</div>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="carousel-slide">
+          <div class="ph-label">📷<span>Foto 2 — reemplaza este espacio</span></div>
+          <div class="carousel-caption">Membrana y filtros nuevos</div>
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="carousel-slide">
+          <div class="ph-label">📷<span>Foto 3 — reemplaza este espacio</span></div>
+          <div class="carousel-caption">Sistema instalado bajo el fregadero</div>
+        </div>
+
+        <!-- SLIDE 4 -->
+        <div class="carousel-slide">
+          <div class="ph-label">📷<span>Foto 4 — reemplaza este espacio</span></div>
+          <div class="carousel-caption">Tanque de almacenamiento</div>
+        </div>
+
+        <!-- SLIDE 5 -->
+        <div class="carousel-slide">
+          <div class="ph-label">📷<span>Foto 5 — reemplaza este espacio</span></div>
+          <div class="carousel-caption">Grifo dedicado de agua purificada</div>
+        </div>
+
+        <!-- SLIDE 6 -->
+        <div class="carousel-slide">
+          <div class="ph-label">📷<span>Foto 6 — reemplaza este espacio</span></div>
+          <div class="carousel-caption">Trabajo terminado y probado</div>
+        </div>
+
+      </div>
+
+      <button class="carousel-arrow prev" id="prevBtn" aria-label="Foto anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <button class="carousel-arrow next" id="nextBtn" aria-label="Foto siguiente">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+    </div>
+
+    <div class="carousel-dots" id="carouselDots"></div>
+  </div>
+</section>
 
 <!-- PROBLEM -->
 <section id="problem" aria-labelledby="prob-title">
@@ -358,6 +444,63 @@ const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('on'); obs.unobserve(e.target); }});
 }, {threshold:.1, rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+/* ===== CARRUSEL: swipe táctil + flechas + puntos + autoplay ===== */
+(function(){
+  const track  = document.getElementById('carouselTrack');
+  const slides = Array.from(track.children);
+  const dotsWrap = document.getElementById('carouselDots');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  let index = 0;
+  let autoplayTimer;
+
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', 'Ir a la foto ' + (i + 1));
+    dot.addEventListener('click', () => goTo(i));
+    dotsWrap.appendChild(dot);
+  });
+  const dots = Array.from(dotsWrap.children);
+
+  function goTo(i){
+    index = (i + slides.length) % slides.length;
+    track.style.transform = 'translateX(-' + (index * 100) + '%)';
+    dots.forEach((d, di) => d.classList.toggle('active', di === index));
+    resetAutoplay();
+  }
+
+  prevBtn.addEventListener('click', () => goTo(index - 1));
+  nextBtn.addEventListener('click', () => goTo(index + 1));
+
+  // Swipe táctil (móvil)
+  let startX = 0, deltaX = 0, dragging = false;
+  track.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+    dragging = true;
+    clearInterval(autoplayTimer);
+  }, {passive:true});
+  track.addEventListener('touchmove', e => {
+    if(!dragging) return;
+    deltaX = e.touches[0].clientX - startX;
+  }, {passive:true});
+  track.addEventListener('touchend', () => {
+    if(!dragging) return;
+    dragging = false;
+    if(deltaX > 40) goTo(index - 1);
+    else if(deltaX < -40) goTo(index + 1);
+    else resetAutoplay();
+    deltaX = 0;
+  });
+
+  // Autoplay (se pausa al interactuar, se reinicia después)
+  function resetAutoplay(){
+    clearInterval(autoplayTimer);
+    autoplayTimer = setInterval(() => goTo(index + 1), 5000);
+  }
+  resetAutoplay();
+})();
 </script>
 </body>
 </html>
